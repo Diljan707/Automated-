@@ -1,6 +1,6 @@
 import requests
 
-url_1173 = "https://raw.githubusercontent.com/Diljan707/Automated-/refs/heads/main/My_Fixed_JioTV.m3u"
+url_1173 = "https://raw.githubusercontent.com/Diljan707/Automated-/refs/heads/main/JioTV_Auto.m3u"
 
 url_958 = "https://jhs-channels.rtxcric.workers.dev/playlist.m3u"
 
