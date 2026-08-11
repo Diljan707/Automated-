@@ -39,5 +39,5 @@ for n, b in ch_958.items():
 final_playlist = ["#EXTM3U"]
 for b in final_list.values(): final_playlist.extend(b)
 
-with open("JioTV_Auto.m3u", "w", encoding="utf-8") as f:
+with open("JioTV_Auto.m3u8", "w", encoding="utf-8") as f:
     f.write("\n".join(final_playlist) + "\n")
