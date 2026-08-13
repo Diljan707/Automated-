@@ -1,6 +1,6 @@
 import requests
 
-# ਟੋਕਨ ਲੈਣ ਲਈ ਵੱਖ-ਵੱਖ ਲਿੰਕ (ਜੇ ਇੱਕ ਬਦਲ ਜਾਵੇ ਜਾਂ ਕੰਮ ਨਾ ਕਰੇ, ਤਾਂ ਦੂਜਾ ਚੱਲ ਪਵੇਗਾ)
+# ਟੋਕਨ ਲੈਣ ਲਈ ਵੱਖ-ਵੱਖ ਲਿੰਕ
 token_urls = [
     "https://allinonereborn2.online/jstrweb2/cookies.json",
     "https://allinonereborn2.online/jstrweb3/cookies.json",
@@ -41,6 +41,9 @@ try:
         group = ch.get('category', 'Entertainment')
         ch_id = ch.get('id', '')
         
+        # JSON ਵਿੱਚੋਂ ਹਰ ਚੈਨਲ ਦੀ ਆਪਣੀ ਅਸਲ ਲਾਇਸੈਂਸ ਕੀਅ ਚੁੱਕਣਾ (ਕੁੰਜੀ ਦਾ ਨਾਂ ਕੀਅ-ਫਾਰਮੈਟ ਮੁਤਾਬਕ ਹੋਵੇਗਾ, ਜਿਵੇਂ license_key ਜਾਂ key)
+        license_key = ch.get('license_key') or ch.get('key') or f"https://ziotvplus.yowaimo.in/license/{ch_id}"
+        
         if not url:
             continue
             
@@ -51,7 +54,7 @@ try:
         if '.mpd' in url:
             m3u += '#KODIPROP:inputstream.adaptive.manifest_type=mpd\n'
             m3u += '#KODIPROP:inputstream.adaptive.license_type=clearkey\n'
-            m3u += f'#KODIPROP:inputstream.adaptive.license_key=https://ziotvplus.yowaimo.in/license/{ch_id}\n'
+            m3u += f'#KODIPROP:inputstream.adaptive.license_key={license_key}\n'
             
         m3u += '#EXTVLCOPT:http-user-agent=StreamFlex(StreamFlex; JioSTB) JioTVPlus-AndroidTv\n'
         m3u += f'#EXTVLCOPT:cookie="{token}"\n'
