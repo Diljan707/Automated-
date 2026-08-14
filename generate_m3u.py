@@ -1,35 +1,27 @@
 import requests
 
-# 1. Target M3U ਤੋਂ ਲਾਇਸੈਂਸ ਪ੍ਰੌਕਸੀ / ਕੀਅ ਫੈਚ ਕਰਨ ਦਾ ਫੰਕਸ਼ਨ
 TARGET_M3U_URL = "https://raw.githubusercontent.com/Sflex0719/STBPLUS/refs/heads/main/Zio.m3u"
 
-proxy_map = {}
+# 1. ਟਰੈਕਟ M3U ਵਿੱਚੋਂ ਕੋਈ ਵੀ ਇੱਕ ਕਾਮਨ ਲਾਇਸੈਂਸ ਪ੍ਰੌਕਸੀ ਲੱਭਣਾ
+common_proxy = ""
 try:
-    print(f"Fetching license proxy from target M3U: {TARGET_M3U_URL}")
     res = requests.get(TARGET_M3U_URL, timeout=10)
     if res.status_code == 200:
-        lines = res.text.splitlines()
-        current_id = ""
-        for line in lines:
+        for line in res.text.splitlines():
             line = line.strip()
-            # tvg-id ਪੜ੍ਹਨਾ
-            if 'tvg-id="' in line:
-                try:
-                    current_id = line.split('tvg-id="')[1].split('"')[0]
-                except:
-                    current_id = ""
-            
-            # ਲਾਇਸੈਂਸ ਪ੍ਰੌਕਸੀ / ਕੀਅ ਲਾਈਨ ਕੱਢਣਾ
-            if ('license_key=' in line or 'KODIPROP:inputstream.adaptive.license_key' in line) and current_id:
+            if ('license_key=' in line or 'KODIPROP:inputstream.adaptive.license_key' in line):
                 key_value = line.split('=')[-1].strip()
-                proxy_map[current_id] = key_value
-        print("Successfully mapped license proxies from target URL!")
-    else:
-        print("Warning: Could not fetch target M3U, using fallback license URLs.")
+                if key_value.startswith("http"):
+                    common_proxy = key_value
+                    break # ਪਹਿਲੀ ਮਿਲਣ ਵਾਲੀ ਕਾਮਨ ਪ੍ਰੌਕਸੀ ਚੁੱਕ ਲਵੋ
 except Exception as e:
-    print(f"Failed to fetch target proxy, error: {e}")
+    print(f"Error fetching target proxy: {e}")
 
-# 2. ਟੋਕਨ ਲੈਣ ਲਈ ਵੱਖ-ਵੱਖ ਲਿੰਕ
+# ਜੇ ਓਥੋਂ ਨਾ ਮਿਲੇ ਤਾਂ ਆਪਣੀ ਡਿਫਾਲਟ ਲਾ ਦੇਣੀ
+if not common_proxy:
+    common_proxy = "https://ziotvplus.yowaimo.in/license/"
+
+# 2. ਟੋਕਨ ਫੈਚ ਕਰਨਾ (ਆਲ-ਇਨ-ਵਨ ਵਾਲਾ ਤਰੀਕਾ)
 token_urls = [
     "https://allinonereborn2.online/jstrweb2/cookies.json",
     "https://allinonereborn2.online/jstrweb3/cookies.json",
@@ -39,26 +31,22 @@ token_urls = [
 token = ""
 for url in token_urls:
     try:
-        print(f"Trying to fetch token from: {url}")
         cookie_res = requests.get(url, timeout=10).json()
-        
         for item in cookie_res:
             if "cookie" in item:
                 token = item["cookie"]
                 break
         if token:
-            print("Token fetched successfully!")
             break
-    except Exception as e:
-        print(f"Failed with {url}, trying next...")
+    except:
+        continue
 
 if not token:
-    print("Error: Could not fetch token from any source!")
+    print("Error: Could not fetch token!")
     exit()
 
-# 3. ਚੈਨਲ ਲਿਸਟ ਫੈਚ ਕਰਨਾ ਅਤੇ ਨਵੀਂ M3U ਬਣਾਉਣਾ
+# 3. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ
 try:
-    print("Fetching channel list...")
     channels = requests.get("https://jtvxweb.pages.dev/jstr4web.json", timeout=10).json()
     
     m3u = '#EXTM3U\n'
@@ -73,9 +61,9 @@ try:
         
         if not url:
             continue
-
-        # Target M3U ਵਿੱਚੋਂ ਆਈ ਲਾਇਸੈਂਸ ਪ੍ਰੌਕਸੀ ਨੂੰ ਪਹਿਲ ਦੇਣੀ, ਜੇ ਨਾ ਮਿਲੇ ਤਾਂ ਆਪਣੀ ਡਿਫਾਲਟ ਵਰਤਣੀ
-        license_key = proxy_map.get(ch_id) or ch.get('license_key') or ch.get('key') or f"https://ziotvplus.yowaimo.in/license/{ch_id}"
+            
+        # ਜੇ ਚੈਨਲ ਦੀ ਆਪ ਦੀ ਪ੍ਰੌਕਸੀ ਬਣਦੀ ਹੈ ਜਾਂ ਕਾਮਨ ਵਰਤਣੀ ਹੈ
+        license_key = f"{common_proxy}{ch_id}" if "ziotvplus" in common_proxy else common_proxy
         
         final_url = f"{url}?{token}" if '?' not in url else f"{url}&{token}"
         
@@ -94,6 +82,6 @@ try:
     with open('JioTV_Auto.m3u', 'w', encoding='utf-8') as f:
         f.write(m3u)
         
-    print(f"Success! Generated {count} channels with updated license proxy.")
+    print(f"Success! Generated {count} channels.")
 except Exception as e:
     print(f"Error: {e}")
