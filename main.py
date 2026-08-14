@@ -24,7 +24,7 @@ if not token:
     print("Error: Could not fetch token!")
     exit()
 
-# 2. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ (ਸਿੱਧਾ API ਤੋਂ ਲਾਇਸੈਂਸ ਕੀ ਚੁੱਕ ਕੇ)
+# 2. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ (ਜියੋਟੀਵੀ ਲਾਇਸੈਂਸ ਯੂਆਰਐੱਲ ਨਾਲ)
 try:
     channels = requests.get("https://jtvxweb.pages.dev/jstr4web.json", timeout=10).json()
     
@@ -41,8 +41,8 @@ try:
         if not url:
             continue
             
-        # ਸਿੱਧਾ JSON ਵਿੱਚੋਂ ਲਾਇਸੈਂਸ ਕੀ ਚੁੱਕ ਰਿਹਾ ਹੈ (ਜੇ ਕੀ ਨਾ ਹੋਵੇ ਤਾਂ ਖਾਲੀ ਰੱਖੇਗਾ)
-        license_key = ch.get('license_key', '') or ch.get('key', '') or ch.get('clearkey', '')
+        # ਇੱਥੇ ਹਰ ਚੈਨਲ ਦੀ ਆਈਡੀ ਨਾਲ ਅਸਲੀ ਲਾਇਸੈਂਸ URL ਬਣ ਜਾਵੇਗਾ
+        license_key = f"https://jiotv.jio.com/license/{ch_id}"
         
         final_url = f"{url}?{token}" if '?' not in url else f"{url}&{token}"
         
