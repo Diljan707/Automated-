@@ -24,15 +24,12 @@ if not token:
     print("Error: Could not fetch token!")
     exit()
 
-# 2. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ (ਪ੍ਰੌਕਸੀ ਅਤੇ ਵੱਖਰੀ ਲਾਇਸੈਂਸ ਕੀ ਨਾਲ)
+# 2. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ (ਸਿੱਧਾ API ਤੋਂ ਲਾਇਸੈਂਸ ਕੀ ਚੁੱਕ ਕੇ)
 try:
     channels = requests.get("https://jtvxweb.pages.dev/jstr4web.json", timeout=10).json()
     
     m3u = '#EXTM3U\n'
     count = 0
-    
-    # ਇੱਥੇ ਆਪਣੀ ਪ੍ਰੌਕਸੀ ਦਾ ਬੇਸ ਯੂਆਰਐੱਲ ਪਾ ਦੇਵੀਂ (ਜਿਵੇਂ Render ਵਾਲਾ ਲિંਕ)
-    proxy_base_url = "https://your-proxy-service.onrender.com/license/"
     
     for ch in channels:
         name = ch.get('name', 'Unknown')
@@ -44,8 +41,8 @@ try:
         if not url:
             continue
             
-        # ਹਰ ਚੈਨਲ ਦੀ ਆਪਣੀ ਪ੍ਰੌਕਸੀ ਲਾਇਸੈਂਸ ਕੀ (ਜਿਵੇਂ .../license/317)
-        license_key = f"{proxy_base_url}{ch_id}"
+        # ਸਿੱਧਾ JSON ਵਿੱਚੋਂ ਲਾਇਸੈਂਸ ਕੀ ਚੁੱਕ ਰਿਹਾ ਹੈ (ਜੇ ਕੀ ਨਾ ਹੋਵੇ ਤਾਂ ਖਾਲੀ ਰੱਖੇਗਾ)
+        license_key = ch.get('license_key', '') or ch.get('key', '') or ch.get('clearkey', '')
         
         final_url = f"{url}?{token}" if '?' not in url else f"{url}&{token}"
         
@@ -61,10 +58,10 @@ try:
         m3u += f'{final_url}\n'
         count += 1
 
-    # ਫ਼ਾਈਲ ਦਾ ਨਾਂ JioTV_Auto.m3u ਰੱਖਿਆ ਗਿਆ ਹੈ
+    # ਫ਼ਾਈਲ ਦਾ ਨਾਂ myjio.m3u ਸੇਵ ਹੋਵੇਗਾ
     with open('myjio.m3u', 'w', encoding='utf-8') as f:
         f.write(m3u)
         
-    print(f"Success! Generated {count} channels in JioTV_Auto.m3u.")
+    print(f"Success! Generated {count} channels in myjio.m3u.")
 except Exception as e:
     print(f"Error: {e}")
