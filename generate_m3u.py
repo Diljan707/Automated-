@@ -2,9 +2,10 @@ import requests
 
 TARGET_M3U_URL = "https://raw.githubusercontent.com/Sflex0719/STBPLUS/refs/heads/main/Zio.m3u"
 
-# 1. ਟਰੈਕਟ M3U ਵਿੱਚੋਂ ਕੋਈ ਵੀ ਇੱਕ ਕਾਮਨ ਲਾਇਸੈਂਸ ਪ੍ਰੌਕਸੀ ਲੱਭਣਾ
+# 1. ਟਰੈਕਟ M3U ਤੋਂ ਸਿਰਫ਼ ਪ੍ਰੌਕਸੀ ਕੱਢਣਾ (ਬਿਨਾਂ ਕਿਸੇ ਫਾਲਬੈਕ ਦੇ)
 common_proxy = ""
 try:
+    print(f"Fetching target M3U from: {TARGET_M3U_URL}")
     res = requests.get(TARGET_M3U_URL, timeout=10)
     if res.status_code == 200:
         for line in res.text.splitlines():
@@ -12,16 +13,16 @@ try:
             if ('license_key=' in line or 'KODIPROP:inputstream.adaptive.license_key' in line):
                 key_value = line.split('=')[-1].strip()
                 if key_value.startswith("http"):
-                    common_proxy = key_value
-                    break # ਪਹਿਲੀ ਮਿਲਣ ਵਾਲੀ ਕਾਮਨ ਪ੍ਰੌਕਸੀ ਚੁੱਕ ਲਵੋ
+                    if "/license/" in key_value:
+                        common_proxy = key_value.split("/license/")[0] + "/license/"
+                    else:
+                        common_proxy = key_value
+                    break
+        print(f"Extracted Proxy: {common_proxy}")
 except Exception as e:
     print(f"Error fetching target proxy: {e}")
 
-# ਜੇ ਓਥੋਂ ਨਾ ਮਿਲੇ ਤਾਂ ਆਪਣੀ ਡਿਫਾਲਟ ਲਾ ਦੇਣੀ
-if not common_proxy:
-    common_proxy = "https://ziotvplus.yowaimo.in/license/"
-
-# 2. ਟੋਕਨ ਫੈਚ ਕਰਨਾ (ਆਲ-ਇਨ-ਵਨ ਵਾਲਾ ਤਰੀਕਾ)
+# 2. ਟੋਕਨ ਫੈਚ ਕਰਨਾ
 token_urls = [
     "https://allinonereborn2.online/jstrweb2/cookies.json",
     "https://allinonereborn2.online/jstrweb3/cookies.json",
@@ -62,8 +63,7 @@ try:
         if not url:
             continue
             
-        # ਜੇ ਚੈਨਲ ਦੀ ਆਪ ਦੀ ਪ੍ਰੌਕਸੀ ਬਣਦੀ ਹੈ ਜਾਂ ਕਾਮਨ ਵਰਤਣੀ ਹੈ
-        license_key = f"{common_proxy}{ch_id}" if "ziotvplus" in common_proxy else common_proxy
+        license_key = f"{common_proxy}{ch_id}" if not common_proxy.endswith(ch_id) else common_proxy
         
         final_url = f"{url}?{token}" if '?' not in url else f"{url}&{token}"
         
