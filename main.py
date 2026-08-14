@@ -24,12 +24,15 @@ if not token:
     print("Error: Could not fetch token!")
     exit()
 
-# 2. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ (ਜියੋਟੀਵੀ ਲਾਇਸੈਂਸ ਯੂਆਰਐੱਲ ਨਾਲ)
+# 2. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ (ਤੇਰੀ ਆਪਣੀ ਰੈਂਡਰ ਪ੍ਰੌਕਸੀ ਨਾਲ)
 try:
     channels = requests.get("https://jtvxweb.pages.dev/jstr4web.json", timeout=10).json()
     
     m3u = '#EXTM3U\n'
     count = 0
+    
+    # ਤੇਰਾ ਪ੍ਰੌਕਸੀ ਬੇਸ ਯੂਆਰਐੱਲ
+    proxy_base_url = "https://jio-proxy.onrender.com/license/"
     
     for ch in channels:
         name = ch.get('name', 'Unknown')
@@ -41,8 +44,8 @@ try:
         if not url:
             continue
             
-        # ਇੱਥੇ ਹਰ ਚੈਨਲ ਦੀ ਆਈਡੀ ਨਾਲ ਅਸਲੀ ਲਾਇਸੈਂਸ URL ਬਣ ਜਾਵੇਗਾ
-        license_key = f"https://jiotv.jio.com/license/{ch_id}"
+        # ਹੁਣ ਲਾਇਸੈਂਸ ਕੀ ਸਿੱਧੀ ਤੇਰੀ ਆਪਣੀ ਪ੍ਰੌਕਸੀ ਤੋਂ ਜਾਵੇਗੀ
+        license_key = f"{proxy_base_url}{ch_id}"
         
         final_url = f"{url}?{token}" if '?' not in url else f"{url}&{token}"
         
