@@ -55,7 +55,7 @@ try:
         count += 1
 
     # ਫ਼ਾਈਲ ਨੂੰ JioTV_Auto.m3u ਨਾਂ ਨਾਲ ਸੇਵ ਕਰਨਾ
-    with open('myjio.m3u', 'w', encoding='utf-8') as f:
+    with open('myjio .m3u', 'w', encoding='utf-8') as f:
         f.write(m3u)
         
     print(f"Success! Generated {count} channels in JioTV_Auto.m3u.")
