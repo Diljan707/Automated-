@@ -1,6 +1,6 @@
+cat << 'EOF' > bot.py
 import requests
 
-# 1. ਟੋਕਨ ਫੈਚ ਕਰਨਾ
 token_urls = [
     "https://allinonereborn2.online/jstrweb2/cookies.json",
     "https://allinonereborn2.online/jstrweb3/cookies.json",
@@ -20,10 +20,6 @@ for url in token_urls:
     except:
         continue
 
-if not token:
-    token = ""
-
-# 2. ਚੈਨਲ ਲਿਸਟ ਫੈਚ ਕਰਕੇ ਉਸੇ ਵਰਕਿੰਗ ਫਾਰਮੈਟ ਵਿੱਚ M3U ਬਣਾਉਣਾ
 try:
     channels = requests.get("https://jtvxweb.pages.dev/jstr4web.json", timeout=10).json()
     
@@ -42,13 +38,17 @@ try:
         if not url:
             continue
             
-        # ਚੈਨਲ ਦੀ ਆਪਣੀ ਲਾਇਸੈਂਸ ਕੀ ਚੈੱਕ ਕਰਨਾ, ਜੇ ਨਾ ਹੋਵੇ ਤਾਂ 0000:0000
-        license_key = ch.get('key', '') or ch.get('license_key', '') or "0000:0000"
+        # KeyID ਅਤੇ Key ਨੂੰ ਮਿਲਾ ਕੇ ClearKey ਫਾਰਮੈਟ ਬਣਾਉਣਾ
+        key_id = ch.get('keyId', '')
+        key_val = ch.get('key', '')
         
-        # ਯੂਆਰਐੱਲ ਨਾਲ ਟੋਕਨ ਜੋੜਨਾ
+        if not key_id or not key_val:
+            continue
+            
+        license_key = f"{key_id}:{key_val}"
+        
         final_url = f"{url}?{token}" if token and '?' not in url else f"{url}&{token}" if token else url
         
-        # ਬਿਲਕੁਲ ਉਹੋ ਜਿਹਾ ਵਰਕਿੰਗ ਫਾਰਮੈਟ
         m3u += f'#EXTINF:-1 tvg-id="{ch_id}" group-title="{group}" group-logo="{group_logo}" tvg-logo="{logo}",{name}\n'
         m3u += f'#KODIPROP:inputstream.adaptive.license_type=clearkey\n'
         m3u += f'#KODIPROP:inputstream.adaptive.license_key={license_key}\n'
@@ -57,7 +57,6 @@ try:
         m3u += f'{final_url}\n\n'
         count += 1
 
-    # ਫ਼ਾਈਲ ਦਾ ਨਾਂ myjiotv.m3u ਸੇਵ ਕਰਨਾ
     filename = 'myjiotv.m3u'
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(m3u)
@@ -65,3 +64,5 @@ try:
     print(f"Success! Generated {count} channels in {filename}.")
 except Exception as e:
     print(f"Error: {e}")
+EOF
+python3 bot.py
