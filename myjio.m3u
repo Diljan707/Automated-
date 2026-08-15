@@ -11,7 +11,7 @@ https://jiotvmblive.cdn.jio.com/bpk-tv/CNBCTV18Prime_MOB/WDVLive/index.mpd?__hdn
 #EXTINF:-1 tvg-id="144" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsHD.png" group-title="Entertainment", Colors HD
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://jio-proxy.onrender.com/license/144
+#KODIPROP:inputstream.adapti
 #EXTVLCOPT:http-user-agent=StreamFlex(StreamFlex; JioSTB) JioTVPlus-AndroidTv
 #EXTVLCOPT:cookie="__hdnea__=st=1786759237~exp=1786780837~acl=/*~hmac=8680f4ca0d237682af594af4311ea6165cc7176853d72ecea762b88f40c155a2"
 https://jiotvmblive.cdn.jio.com/bpk-tv/ColorsHD_MOB/WDVLive/index.mpd?__hdnea__=st=1786759237~exp=1786780837~acl=/*~hmac=8680f4ca0d237682af594af4311ea6165cc7176853d72ecea762b88f40c155a2
