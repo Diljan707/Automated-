@@ -21,50 +21,43 @@ for url in token_urls:
         continue
 
 if not token:
-    print("Error: Could not fetch token!")
-    exit()
+    token = ""
 
-# 2. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ (ਤੇਰੀ ਆਪਣੀ ਰੈਂਡਰ ਪ੍ਰੌਕਸੀ ਨਾਲ)
+# 2. ਚੈਨਲ ਲਿਸਟ ਫੈਚ ਕਰਕੇ M3U ਬਣਾਉਣਾ
 try:
     channels = requests.get("https://jtvxweb.pages.dev/jstr4web.json", timeout=10).json()
     
     m3u = '#EXTM3U\n'
     count = 0
     
-    # ਤੇਰਾ ਪ੍ਰੌਕਸੀ ਬੇਸ ਯੂਆਰਐੱਲ
-    proxy_base_url = "https://jio-proxy.onrender.com/license/"
-    
     for ch in channels:
         name = ch.get('name', 'Unknown')
         url = ch.get('url', '')
         logo = ch.get('logo', '')
-        group = ch.get('category', 'Entertainment')
+        group = "JioTV+ ▶ | Unknown"
+        group_logo = "https://i.postimg.cc/52qG6sKt/STREAMXi.png"
         ch_id = ch.get('id', '')
         
         if not url:
             continue
             
-        # ਹੁਣ ਲਾਇਸੈਂਸ ਕੀ ਸਿੱਧੀ ਤੇਰੀ ਆਪਣੀ ਪ੍ਰੌਕਸੀ ਤੋਂ ਜਾਵੇਗੀ
-        license_key = f"{proxy_base_url}{ch_id}"
+        # ਜੇ ਚੈਨਲ .mpd ਵਾਲਾ ਹੈ ਤਾਂ ਉਸਦੀ ਅਸਲੀ ਲਾਇਸੈਂਸ ਕੀ ਲੱਗ ਸਕਦੀ ਹੈ, ਨਹੀਂ ਤਾਂ 0000:0000
+        license_key = "0000:0000"
         
-        final_url = f"{url}?{token}" if '?' not in url else f"{url}&{token}"
+        final_url = f"{url}?{token}" if token and '?' not in url else f"{url}&{token}" if token else url
         
-        m3u += f'\n#EXTINF:-1 tvg-id="{ch_id}" tvg-logo="{logo}" group-title="{group}", {name}\n'
-        
-        if '.mpd' in url:
-            m3u += '#KODIPROP:inputstream.adaptive.manifest_type=mpd\n'
-            m3u += '#KODIPROP:inputstream.adaptive.license_type=clearkey\n'
-            m3u += f'#KODIPROP:inputstream.adaptive.license_key={license_key}\n'
-            
-        m3u += '#EXTVLCOPT:http-user-agent=StreamFlex(StreamFlex; JioSTB) JioTVPlus-AndroidTv\n'
-        m3u += f'#EXTVLCOPT:cookie="{token}"\n'
-        m3u += f'{final_url}\n'
+        m3u += f'#EXTINF:-1 tvg-id="{ch_id}" group-title="{group}" group-logo="{group_logo}" tvg-logo="{logo}",{name}\n'
+        m3u += f'#KODIPROP:inputstream.adaptive.license_type=clearkey\n'
+        m3u += f'#KODIPROP:inputstream.adaptive.license_key={license_key}\n'
+        m3u += f'#EXTVLCOPT:http-user-agent=curl/8.20.0\n'
+        m3u += f'#EXTHTTP:{{"cookie":"{token}","Origin":"https://www.jiotv.com/","Referer":"https://www.jiotv.com/"}}\n'
+        m3u += f'{final_url}\n\n'
         count += 1
 
-    # ਫ਼ਾਈਲ ਦਾ ਨਾਂ myjio.m3u ਸੇਵ ਹੋਵੇਗਾ
+    # ਫ਼ਾਈਲ ਨੂੰ JioTV_Auto.m3u ਨਾਂ ਨਾਲ ਸੇਵ ਕਰਨਾ
     with open('myjio.m3u', 'w', encoding='utf-8') as f:
         f.write(m3u)
         
-    print(f"Success! Generated {count} channels in myjio.m3u.")
+    print(f"Success! Generated {count} channels in JioTV_Auto.m3u.")
 except Exception as e:
     print(f"Error: {e}")
