@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,27 +30,24 @@ jobs:
         run: |
           python main.py
 
+      - name: Check Generated Files (Debug Step)
+        run: |
+          echo "📁 Current repository files:"
+          ls -la
+
       - name: Commit & Push Generated M3U
         run: |
-          git config user.name "m3u-bot"
-          git config user.email "m3u-bot@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # ਪੁਰਾਣੇ ਅਨਸੇਵਡ ਚੇਂਜਿਜ਼ ਨੂੰ ਸਟੈਸ਼ ਕਰਨਾ
-          git stash || true
-          
-          git fetch origin main
-          git rebase origin/main || git rebase --abort
-          
-          # ਵਾਪਸ ਲਿਆਉਣਾ
-          git stash pop || true
-
-          git add JioTV_Auto.m3u
+          # ਸਹੀ ਫ਼ਾਈਲ ਨਾਂ ਜੋੜਿਆ ਗਿਆ ਹੈ
+          git add myjiotv.m3u
 
           if git diff --cached --quiet; then
-            echo "ℹ️ No changes detected in JioTV_Auto.m3u. Skipping commit."
+            echo "ℹ️ No changes detected in myjiotv.m3u. Skipping commit."
           else
             TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
-            git commit -m "chore(m3u): auto-update JioTV_Auto.m3u [$TIMESTAMP]"
+            git commit -m "chore(m3u): auto-update myjiotv.m3u [$TIMESTAMP]"
             git push origin main
             echo "✅ Changes pushed successfully."
           fi
