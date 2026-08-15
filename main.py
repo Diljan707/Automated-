@@ -41,7 +41,6 @@ try:
         if not url:
             continue
             
-        # ਜੇ ਚੈਨਲ .mpd ਵਾਲਾ ਹੈ ਤਾਂ ਉਸਦੀ ਅਸਲੀ ਲਾਇਸੈਂਸ ਕੀ ਲੱਗ ਸਕਦੀ ਹੈ, ਨਹੀਂ ਤਾਂ 0000:0000
         license_key = "0000:0000"
         
         final_url = f"{url}?{token}" if token and '?' not in url else f"{url}&{token}" if token else url
@@ -54,10 +53,11 @@ try:
         m3u += f'{final_url}\n\n'
         count += 1
 
-    # ਫ਼ਾਈਲ ਨੂੰ JioTV_Auto.m3u ਨਾਂ ਨਾਲ ਸੇਵ ਕਰਨਾ
-    with open('myjio.m3u', 'w', encoding='utf-8') as f:
+    # ਇੱਥੇ ਫ਼ਾਈਲ ਦਾ ਨਾਂ myjiotv.m3u ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ
+    filename = 'myjiotv.m3u'
+    with open(filename, 'w', encoding='utf-8') as f:
         f.write(m3u)
         
-    print(f"Success! Generated {count} channels in JioTV_Auto.m3u.")
+    print(f"Success! Generated {count} channels in {filename}.")
 except Exception as e:
     print(f"Error: {e}")
