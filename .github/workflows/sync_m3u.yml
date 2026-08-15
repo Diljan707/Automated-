@@ -37,17 +37,22 @@ jobs:
           git config user.name "m3u-bot"
           git config user.email "m3u-bot@users.noreply.github.com"
           
-          # ਰਿਮੋਟ ਤੋਂ ਲੇਟਸ ਤਬਦੀਲੀਆਂ ਖਿੱਚਣ ਲਈ
+          # ਪੁਰਾਣੇ ਅਨਸੇਵਡ ਚੇਂਜਿਜ਼ ਨੂੰ ਸਟੈਸ਼ ਕਰਨਾ
+          git stash || true
+          
           git fetch origin main
           git rebase origin/main || git rebase --abort
+          
+          # ਵਾਪਸ ਲਿਆਉਣਾ
+          git stash pop || true
 
-          git add myjio.m3u
+          git add JioTV_Auto.m3u
 
           if git diff --cached --quiet; then
-            echo "ℹ️ No changes detected in myjio.m3u. Skipping commit."
+            echo "ℹ️ No changes detected in JioTV_Auto.m3u. Skipping commit."
           else
             TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
-            git commit -m "chore(m3u): auto-update myjio.m3u [$TIMESTAMP]"
+            git commit -m "chore(m3u): auto-update JioTV_Auto.m3u [$TIMESTAMP]"
             git push origin main
             echo "✅ Changes pushed successfully."
           fi
