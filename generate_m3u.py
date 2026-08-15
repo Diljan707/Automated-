@@ -2,7 +2,7 @@ import requests
 
 TARGET_M3U_URL = "https://raw.githubusercontent.com/Sflex0719/STBPLUS/refs/heads/main/Zio.m3u"
 
-# 1. ਟਰੈਕਟ M3U ਤੋਂ ਸਿਰਫ਼ ਪ੍ਰੌਕਸੀ ਕੱਢਣਾ (ਬਿਨਾਂ ਕਿਸੇ ਫਾਲਬੈਕ ਦੇ)
+# 1. ਟਰੈਕਟ M3U ਤੋਂ ਸਿਰਫ਼ ਪ੍ਰੌਕਸੀ ਕੱਢਣਾ
 common_proxy = ""
 try:
     print(f"Fetching target M3U from: {TARGET_M3U_URL}")
@@ -22,14 +22,13 @@ try:
 except Exception as e:
     print(f"Error fetching target proxy: {e}")
 
-# 2. ਟੋਕਨ ਫੈਚ ਕਰਨਾ (Error: data.map ਤੋਂ ਬਚਣ ਲਈ ਸੇਫ਼ਟੀ ਚੈੱਕ ਨਾਲ)
+# 2. ਟੋਕਨ ਫੈਚ ਕਰਨਾ (ਸੇਫ਼ਟੀ ਚੈੱਕ ਨਾਲ)
 token_urls = [
     "https://allinonereborn2.online/jstrweb2/cookies.json",
     "https://allinonereborn2.online/jstrweb3/cookies.json",
     "https://allinonereborn2.online/jstrweb4/cookies.json"
 ]
 
-# ਸੇਫ਼ਟੀ ਲਈ ਡਿਫਾਲਟ ਵਰਕਿੰਗ ਟੋਕਨ
 token = "__hdnea__=st=1786759237~exp=1786780837~acl=/*~hmac=8680f4ca0d237682af594af4311ea6165cc7176853d72ecea762b88f40c155a2"
 
 for url in token_urls:
@@ -46,7 +45,7 @@ for url in token_urls:
     except:
         continue
 
-# 3. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ (ਘੱਟ ਲੇਟੈਂਸੀ ਅਤੇ ਬਫਰਿੰਗ ਰੋਕਣ ਵਾਲੇ ਪੈਰਾਮੀਟਰਾਂ ਨਾਲ)
+# 3. ਚੈਨਲ ਲਿਸਟ ਬਣਾਉਣਾ (ਅਲਟਰਾ-ਲੋਅ ਲੇਟੈਂਸੀ ਸੈਟਿੰਗਜ਼ ਨਾਲ)
 try:
     channels_res = requests.get("https://jtvxweb.pages.dev/jstr4web.json", timeout=10).json()
     
@@ -75,7 +74,6 @@ try:
         
         final_url = f"{url}?{token}" if '?' not in url else f"{url}&{token}"
         
-        # .mpd ਲਿੰਕਸ ਲਈ ਲਾਈਵ ਡਿਲੇਅ ਜ਼ੀਰੋ ਕਰਨਾ
         if '.mpd' in url and 'live_delay=0' not in final_url:
             final_url = f"{final_url}&live_delay=0" if '?' in final_url else f"{final_url}?live_delay=0"
         
@@ -86,9 +84,11 @@ try:
             m3u += '#KODIPROP:inputstream.adaptive.license_type=clearkey\n'
             m3u += f'#KODIPROP:inputstream.adaptive.license_key={license_key}\n'
             
-        # ਲੇਟੈਂਸੀ ਘਟਾਉਣ ਅਤੇ ਬਫਰਿੰਗ ਰੋਕਣ ਲਈ ਵਾਧੂ ਆਪਸ਼ਨਜ਼
-        m3u += '#EXTVLCOPT:network-caching=300\n'
-        m3u += '#EXTVLCOPT:file-caching=300\n'
+        # ਸਭ ਤੋਂ ਤੇਜ਼ ਸਟ੍ਰੀਮਿੰਗ ਲਈ ਘੱਟ ਕੈਸ਼ਿੰਗ ਪੈਰਾਮੀਟਰ
+        m3u += '#EXTVLCOPT:network-caching=100\n'
+        m3u += '#EXTVLCOPT:file-caching=100\n'
+        m3u += '#EXTVLCOPT:clock-synchro=0\n'
+        m3u += '#EXTVLCOPT:http-reconnect=true\n'
         m3u += '#EXTVLCOPT:http-user-agent=StreamFlex(StreamFlex; JioSTB) JioTVPlus-AndroidTv\n'
         m3u += f'#EXTVLCOPT:cookie="{token}"\n'
         m3u += f'{final_url}\n'
@@ -97,6 +97,6 @@ try:
     with open('JioTV_Auto.m3u', 'w', encoding='utf-8') as f:
         f.write(m3u)
         
-    print(f"Success! Generated {count} channels with low-latency settings.")
+    print(f"Success! Generated {count} channels with ultra low-latency settings.")
 except Exception as e:
     print(f"Error: {e}")
