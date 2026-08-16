@@ -1,7 +1,6 @@
 import requests
 
 url_1173 = "https://raw.githubusercontent.com/Diljan707/Automated-/refs/heads/main/JioTV_Auto.m3u"
-
 url_958 = "https://jhs-channels.rtxcric.workers.dev/playlist.m3u"
 
 def fetch_playlist(url):
@@ -32,12 +31,31 @@ def parse_channels(lines):
 ch_1173 = parse_channels(lines_1173)
 ch_958 = parse_channels(lines_958)
 
-final_list = {n: b for n, b in ch_1173.items() if "zee" not in n and "star sports" not in n}
+# 1. ਪਹਿਲੀ ਲਿਸਟ ਵਿੱਚੋਂ ਸਿਰਫ਼ Star Sports ਕੱਢਣੇ ਨੇ (Zee ਨੂੰ ਹੱਥ ਨਹੀਂ ਲਾਇਆ)
+final_list = {
+    n: b for n, b in ch_1173.items() 
+    if "star sports" not in n
+}
+
+# 2. ਤੁਹਾਡੇ ਖ਼ਾਸ ਡਿਜੀਟਲ ਸਟਾਰ ਸਪੋਰਟਸ ਚੈਨਲਾਂ ਦੀ ਸੂਚੀ
+target_star_channels = {
+    "star sports 1 digital",
+    "star sports 1 hindi digital",
+    "star sports 2 digital",
+    "star sports 2 hindi digital",
+    "star sports 3 digital",
+    "star sports khel digital"
+}
+
 for n, b in ch_958.items():
-    if "zee" in n or "star sports" in n: final_list[n] = b
+    # ਦੂਜੀ ਲਿਸਟ ਵਿੱਚੋਂ ਸਿਰਫ਼ ਤੁਹਾਡੇ ਦੱਸੇ ਹੋਏ ਖ਼ਾਸ ਡਿਜੀਟਲ Star Sports ਚੈਨਲ ਹੀ ਲੈਣੇ ਹਨ
+    if any(target in n for target in target_star_channels):
+        final_list[n] = b
 
 final_playlist = ["#EXTM3U"]
 for b in final_list.values(): final_playlist.extend(b)
 
 with open("JioTV_Auto.m3u8", "w", encoding="utf-8") as f:
     f.write("\n".join(final_playlist) + "\n")
+
+print("Success! Playlist generated.")
