@@ -1,3 +1,4 @@
+import re
 import requests
 
 url_1173 = "https://raw.githubusercontent.com/Diljan707/Automated-/refs/heads/main/JioTV_Auto.m3u"
@@ -23,7 +24,11 @@ def parse_channels(lines):
     while i < len(lines):
         if lines[i].startswith("#EXTINF"):
             extinf = lines[i]
-            block = [lines[i]]
+            
+            # group-title ਨੂੰ ਹਟਾਉਣ ਲਈ regex (ਪਲੇਲিস্ট ਨੂੰ plain ਬਣਾਉਣ ਵਾਸਤੇ)
+            extinf = re.sub(r'group-title="[^"]*"\s*', '', extinf)
+            
+            block = [extinf]
             i += 1
             while i < len(lines) and not lines[i].startswith("#EXTINF"):
                 block.append(lines[i])
@@ -39,14 +44,14 @@ ch_958 = parse_channels(lines_958)
 ch_zee = parse_channels(lines_zee)
 ch_sony = parse_channels(lines_sony)
 
-# 1. 1173 ਵਾਲੀ ਲਿਸਟ ਵਿੱਚੋਂ Star Sports, Zee ਅਤੇ Sony ਦੇ ਪੁਰਾਣੇ ਚੈਨਲ ਕੱਢਣੇ ਨੇ
+# 1. 1173 ਵਾਲੀ ਲਿਸਟ ਵਿੱਚੋਂ Star Sports, Zee ਅਤੇ Sony Pal ਕੱਢਣੇ ਨੇ
 final_list = {}
 for n, b in ch_1173.items():
-    if "star sports" in n or "zee" in n or "sony" in n:
+    if "star sports" in n or "zee" in n or "sony pal" in n:
         continue
     final_list[n] = b
 
-# 2. ਖ਼ਾਸ ਡਿਜੀਟਲ ਸਟਾਰ ਸਪੋਰਟਸ ਚੈਨਲ ਐਡ ਕਰਨੇ
+# 2. ਖ਼ਾਸ ਡਿਜੀਟਲ ਸਟਾਰ ਸਪੋਰਟਸ ਚੈਨਲ ਐਡ ਕਰਨੇ (958 ਵਾਲੀ ਲਿਸਟ ਵਿੱਚੋਂ)
 target_star_channels = {
     "star sports 1 digital",
     "star sports 1 hindi digital",
@@ -64,14 +69,15 @@ for n, b in ch_zee.items():
     if "zee" in n:
         final_list[n] = b
 
-# 4. Sony ਲਿੰਕ ਵਿੱਚੋਂ Sony Pal ਅਤੇ Sony Ten ਚੈਨਲ ਐਡ ਕਰਨੇ
+# 4. Sony ਲਿੰਕ ਵਿੱਚੋਂ ਸਿਰਫ਼ Sony Pal ਅਤੇ Sony Ten ਚੈਨਲ (1 ਤੋਂ 6 ਤੱਕ) ਐਡ ਕਰਨੇ
 target_sony_keywords = {
     "sony pal",
     "sony ten 1",
     "sony ten 2",
     "sony ten 3",
     "sony ten 4",
-    "sony ten 5"
+    "sony ten 5",
+    "sony ten 6"
 }
 for n, b in ch_sony.items():
     if any(keyword in n for keyword in target_sony_keywords):
@@ -84,4 +90,4 @@ for b in final_list.values():
 with open("JioTV_Auto.m3u8", "w", encoding="utf-8") as f:
     f.write("\n".join(final_playlist) + "\n")
 
-print("Success! Updated playlist generated.")
+print("Success! Plain updated playlist generated.")
