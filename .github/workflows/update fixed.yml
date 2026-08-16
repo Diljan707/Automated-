@@ -3,8 +3,7 @@ name: Update M3U Playlist
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *' # ਹਰ 6 ਘੰਟਿਆਂ ਬਾਅਦ ਆਟੋਮੈਟਿਕ ਅੱਪਡੇਟ ਹੋਵੇਗਾ
-
+    - cron: '*/20 * * * *'
 jobs:
   update:
     runs-on: ubuntu-latest
