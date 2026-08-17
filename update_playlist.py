@@ -1,8 +1,11 @@
 import re
+import subprocess
 import requests
+import shutil
+import os
 
 # =========================================================
-# PLAYLIST URLS
+# SOURCES
 # =========================================================
 
 url_1173 = "https://raw.githubusercontent.com/Diljan707/Automated-/refs/heads/main/JioTV_Auto.m3u"
@@ -14,33 +17,20 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
-# =========================================================
-# HTTP STATUS WHICH SHOULD TRIGGER FALLBACK
-# =========================================================
-
-ERROR_STATUSES = {
-    400,
-    401,
-    402,
-    403,
-    404,
-    405,
-    408,
-    410,
-    429,
-    500,
-    501,
-    502,
-    503,
-    504
-}
-
-# 302 is handled separately because redirect is disabled.
-ERROR_STATUSES.add(302)
+TEST_SECONDS = 5
 
 
 # =========================================================
-# FETCH PLAYLIST
+# FFMPEG
+# =========================================================
+
+if shutil.which("ffmpeg") is None:
+    print("ERROR: ffmpeg not found")
+    raise SystemExit(1)
+
+
+# =========================================================
+# FETCH
 # =========================================================
 
 def fetch_playlist(url):
@@ -48,45 +38,28 @@ def fetch_playlist(url):
     try:
         r = requests.get(
             url,
-            timeout=15,
+            timeout=20,
             headers=HEADERS
         )
 
+        print(f"[PLAYLIST] {r.status_code} {url}")
+
         if r.status_code == 200:
-            print(f"[PLAYLIST OK] {url}")
             return r.text.splitlines()
 
-        print(
-            f"[PLAYLIST ERROR] "
-            f"{url} -> {r.status_code}"
-        )
-
-        return []
-
     except Exception as e:
+        print(f"[FETCH ERROR] {e}")
 
-        print(
-            f"[PLAYLIST ERROR] "
-            f"{url} -> {e}"
-        )
-
-        return []
-
-
-lines_1173 = fetch_playlist(url_1173)
-lines_958 = fetch_playlist(url_958)
-lines_zee = fetch_playlist(url_zee)
-lines_sony = fetch_playlist(url_sony)
+    return []
 
 
 # =========================================================
-# PARSE CHANNELS
+# PARSE
 # =========================================================
 
 def parse_channels(lines):
 
     channels = {}
-
     i = 0
 
     while i < len(lines):
@@ -95,7 +68,6 @@ def parse_channels(lines):
 
             extinf = lines[i]
 
-            # Remove group-title
             extinf = re.sub(
                 r'group-title="[^"]*"\s*',
                 '',
@@ -113,52 +85,49 @@ def parse_channels(lines):
                 block.append(lines[i])
                 i += 1
 
-            name = (
-                extinf
-                .split(",")[-1]
-                .strip()
-                .lower()
-            )
+            name = extinf.split(",")[-1].strip().lower()
 
             channels[name] = block
 
         else:
-
             i += 1
 
     return channels
 
 
-ch_1173 = parse_channels(lines_1173)
-ch_958 = parse_channels(lines_958)
-ch_zee = parse_channels(lines_zee)
-ch_sony = parse_channels(lines_sony)
+# =========================================================
+# LOAD
+# =========================================================
+
+ch_1173 = parse_channels(fetch_playlist(url_1173))
+ch_958 = parse_channels(fetch_playlist(url_958))
+ch_zee = parse_channels(fetch_playlist(url_zee))
+ch_sony = parse_channels(fetch_playlist(url_sony))
 
 
 # =========================================================
-# 1. 1173 CHANNELS
-# REMOVE STAR SPORTS / ZEE / SONY PAL
+# BASE LIST
 # =========================================================
 
 final_list = {}
 
-for n, b in ch_1173.items():
+for name, block in ch_1173.items():
 
     if (
-        "star sports" in n
-        or "zee" in n
-        or "sony pal" in n
+        "star sports" in name
+        or "zee" in name
+        or "sony pal" in name
     ):
         continue
 
-    final_list[n] = b
+    final_list[name] = block
 
 
 # =========================================================
-# 2. ADD SELECTED STAR SPORTS DIGITAL
+# STAR SPORTS
 # =========================================================
 
-target_star_channels = {
+star_targets = {
     "star sports 1 digital",
     "star sports 1 hindi digital",
     "star sports 2 digital",
@@ -167,30 +136,27 @@ target_star_channels = {
     "star sports khel digital"
 }
 
-for n, b in ch_958.items():
+for name, block in ch_958.items():
 
-    if any(
-        target in n
-        for target in target_star_channels
-    ):
-        final_list[n] = b
+    if any(x in name for x in star_targets):
+        final_list[name] = block
 
 
 # =========================================================
-# 3. ADD ZEE CHANNELS
+# ZEE
 # =========================================================
 
-for n, b in ch_zee.items():
+for name, block in ch_zee.items():
 
-    if "zee" in n:
-        final_list[n] = b
+    if "zee" in name:
+        final_list[name] = block
 
 
 # =========================================================
-# 4. ADD SONY PAL + SONY TEN 1-6
+# SONY
 # =========================================================
 
-target_sony_keywords = {
+sony_targets = {
     "sony pal",
     "sony ten 1",
     "sony ten 2",
@@ -200,17 +166,14 @@ target_sony_keywords = {
     "sony ten 6"
 }
 
-for n, b in ch_sony.items():
+for name, block in ch_sony.items():
 
-    if any(
-        keyword in n
-        for keyword in target_sony_keywords
-    ):
-        final_list[n] = b
+    if any(x in name for x in sony_targets):
+        final_list[name] = block
 
 
 # =========================================================
-# GET STREAM URL FROM CHANNEL BLOCK
+# STREAM URL
 # =========================================================
 
 def get_stream_url(block):
@@ -219,227 +182,150 @@ def get_stream_url(block):
 
         line = line.strip()
 
-        if (
-            line
-            and not line.startswith("#")
-        ):
+        if line and not line.startswith("#"):
             return line
 
     return ""
 
 
 # =========================================================
-# CHECK STREAM
+# FFMPEG TEST
 # =========================================================
 
-def check_stream(url):
+def ffmpeg_test(url):
 
     if not url:
-        return False, None
+        return False
 
     try:
 
-        # ---------------------------------------------
-        # HEAD
-        # Redirects disabled
-        # ---------------------------------------------
+        cmd = [
+            "ffmpeg",
+            "-hide_banner",
+            "-loglevel", "error",
 
-        res = requests.head(
-            url,
-            timeout=5,
-            headers=HEADERS,
-            allow_redirects=False
+            "-i", url,
+
+            "-t", str(TEST_SECONDS),
+
+            "-map", "0:v:0",
+
+            "-f", "null",
+            "-"
+        ]
+
+        result = subprocess.run(
+            cmd,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+            timeout=TEST_SECONDS + 12
         )
 
-        status = res.status_code
+        return result.returncode == 0
 
-        res.close()
+    except subprocess.TimeoutExpired:
 
-        # Clear HTTP errors
-        if status in ERROR_STATUSES:
-            return False, status
-
-        # 200 = working
-        if status == 200:
-            return True, status
-
-        # ---------------------------------------------
-        # Some servers don't support HEAD
-        # Try GET
-        # ---------------------------------------------
-
-        res = requests.get(
-            url,
-            timeout=5,
-            stream=True,
-            headers=HEADERS,
-            allow_redirects=False
-        )
-
-        status = res.status_code
-
-        if status in ERROR_STATUSES:
-
-            res.close()
-
-            return False, status
-
-        if status == 200:
-
-            res.close()
-
-            return True, status
-
-        res.close()
-
-        # ---------------------------------------------
-        # IMPORTANT:
-        # 451 is NOT treated as broken.
-        # Unknown statuses are also kept.
-        # ---------------------------------------------
-
-        return True, status
+        # Stream was still processing.
+        return True
 
     except Exception as e:
 
-        print(
-            f"[CONNECTION ERROR] {e}"
-        )
-
-        return False, None
+        print(f"FFMPEG ERROR: {e}")
+        return False
 
 
 # =========================================================
-# SMART FALLBACK
-#
-# ORIGINAL FAILED
-#       ↓
-# ZEE EXISTS?
-#       ↓
-# CHECK ZEE
-#       ↓
-# ZEE WORKING -> USE ZEE
-# ZEE FAILED  -> KEEP ORIGINAL
+# CHECK CHANNELS
 # =========================================================
 
 verified_list = {}
 
-for n, original_block in final_list.items():
+total = len(final_list)
+
+print()
+print("==========================================")
+print("FFMPEG CHANNEL TEST")
+print(f"TOTAL: {total}")
+print("==========================================")
+print()
+
+
+for number, (name, original_block) in enumerate(
+    final_list.items(),
+    1
+):
+
+    print(
+        f"[{number}/{total}] {name}"
+    )
 
     original_url = get_stream_url(
         original_block
     )
 
-    original_working, original_status = check_stream(
-        original_url
-    )
+    # -----------------------------------------
+    # ORIGINAL
+    # -----------------------------------------
 
-    # -----------------------------------------------------
-    # ORIGINAL WORKING
-    # -----------------------------------------------------
+    if ffmpeg_test(original_url):
 
-    if original_working:
+        print("  [OK] Original")
 
-        print(
-            f"[OK/KEEP] {n} | "
-            f"Status: {original_status}"
-        )
-
-        verified_list[n] = original_block
-
+        verified_list[name] = original_block
         continue
 
 
-    # -----------------------------------------------------
-    # ORIGINAL FAILED
-    # -----------------------------------------------------
-
-    print(
-        f"[ORIGINAL FAILED] {n} | "
-        f"Status: {original_status}"
-    )
+    print("  [FAIL] Original")
 
 
-    # -----------------------------------------------------
-    # CHECK ZEE FALLBACK
-    # -----------------------------------------------------
+    # -----------------------------------------
+    # ZEE FALLBACK
+    # -----------------------------------------
 
-    if n in ch_zee:
+    if name in ch_zee:
 
-        zee_block = ch_zee[n]
+        zee_block = ch_zee[name]
 
         zee_url = get_stream_url(
             zee_block
         )
 
-        zee_working, zee_status = check_stream(
-            zee_url
-        )
+        print("  Testing Zee fallback...")
 
+        if ffmpeg_test(zee_url):
 
-        # ---------------------------------------------
-        # ZEE WORKING
-        # ---------------------------------------------
+            print("  [FALLBACK] Zee")
 
-        if zee_working:
-
-            print(
-                f"[ZEE FALLBACK OK] {n} | "
-                f"Zee Status: {zee_status}"
-            )
-
-            verified_list[n] = zee_block
-
-
-        # ---------------------------------------------
-        # ZEE ALSO FAILED
-        # KEEP ORIGINAL
-        # ---------------------------------------------
+            verified_list[name] = zee_block
 
         else:
 
             print(
-                f"[ZEE FAILED] {n} | "
-                f"Zee Status: {zee_status} | "
-                f"KEEPING ORIGINAL"
+                "  [FAILED] Zee -> keeping original"
             )
 
-            verified_list[n] = original_block
-
-
-    # -----------------------------------------------------
-    # NO ZEE FALLBACK
-    # KEEP ORIGINAL
-    # -----------------------------------------------------
+            verified_list[name] = original_block
 
     else:
 
         print(
-            f"[NO ZEE FALLBACK] {n} | "
-            f"Keeping original"
+            "  [NO FALLBACK] keeping original"
         )
 
-        verified_list[n] = original_block
+        verified_list[name] = original_block
 
 
 # =========================================================
-# CREATE FINAL M3U
-# =========================================================
-
-final_playlist = [
-    "#EXTM3U"
-]
-
-for block in verified_list.values():
-
-    final_playlist.extend(block)
-
-
-# =========================================================
-# WRITE FILE
+# OUTPUT
 # =========================================================
 
 output_file = "JioTV_Auto.m3u8"
+
+playlist = ["#EXTM3U"]
+
+for block in verified_list.values():
+    playlist.extend(block)
+
 
 with open(
     output_file,
@@ -448,24 +334,14 @@ with open(
 ) as f:
 
     f.write(
-        "\n".join(final_playlist)
-        + "\n"
+        "\n".join(playlist) + "\n"
     )
 
 
-# =========================================================
-# COMPLETE
-# =========================================================
-
 print()
 print("==========================================")
-print("SUCCESS!")
+print("DONE")
 print("==========================================")
-print(
-    f"Final playlist: {output_file}"
-)
-print(
-    f"Total channels: {len(verified_list)}"
-)
-print("No channel was removed.")
-print("==========================================")
+print(f"Channels: {len(verified_list)}")
+print(f"Output: {output_file}")
+print("No channel removed.")
