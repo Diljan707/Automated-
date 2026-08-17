@@ -24,10 +24,7 @@ def parse_channels(lines):
     while i < len(lines):
         if lines[i].startswith("#EXTINF"):
             extinf = lines[i]
-            
-            # group-title ਨੂੰ ਹਟਾਉਣ ਲਈ regex (ਪਲੇਲিস্ট ਨੂੰ plain ਬਣਾਉਣ ਵਾਸਤੇ)
             extinf = re.sub(r'group-title="[^"]*"\s*', '', extinf)
-            
             block = [extinf]
             i += 1
             while i < len(lines) and not lines[i].startswith("#EXTINF"):
@@ -83,11 +80,45 @@ for n, b in ch_sony.items():
     if any(keyword in n for keyword in target_sony_keywords):
         final_list[n] = b
 
+# 5. ਚੈਨਲ ਲਿੰਕ ਵੈਰੀਫਿਕੇਸ਼ਨ ਅਤੇ Fallback ਸਿਸਟਮ (Status 200 ਚੈੱਕ ਕਰਨਾ)
+def get_stream_url(block):
+    for line in block:
+        if line and not line.startswith("#"):
+            return line.strip()
+    return ""
+
+verified_list = {}
+for n, b in final_list.items():
+    stream_url = get_stream_url(b)
+    is_working = False
+    
+    if stream_url:
+        try:
+            # ਲਿੰਕ ਦਾ ਸਟੇਟਸ ਚੈੱਕ ਕਰਨਾ
+            res = requests.head(stream_url, timeout=5, headers={"User-Agent": "Mozilla/5.0"})
+            if res.status_code == 200:
+                is_working = True
+            else:
+                # ਜੇ HEAD ਨਾਲ 200 ਨਾ ਆਵੇ ਤਾਂ GET ਨਾਲ ਛੋਟੀ ਰਿਕਵੈਸਟ ਮਾਰ ਕੇ ਦੇਖਣਾ
+                res_get = requests.get(stream_url, timeout=5, stream=True, headers={"User-Agent": "Mozilla/5.0"})
+                if res_get.status_code == 200:
+                    is_working = True
+                res_get.close()
+        except:
+            is_working = False
+
+    # ਜੇ ਲਿੰਕ ਕੰਮ ਨਹੀਂ ਕਰ ਰਿਹਾ ਅਤੇ ਉਹ Zee ਨਾਲ ਜੁੜਿਆ ਹੈ ਜਾਂ Zio ਵਿੱਚ ਉਪਲਬਧ ਹੈ, ਤਾਂ Zee ਵਾਲਾ ਬਲਾਕ ਲਗਾਉਣਾ
+    if not is_working and n in ch_zee:
+        print(f"Switching to Zio fallback for: {n}")
+        verified_list[n] = ch_zee[n]
+    else:
+        verified_list[n] = b
+
 final_playlist = ["#EXTM3U"]
-for b in final_list.values(): 
+for b in verified_list.values(): 
     final_playlist.extend(b)
 
 with open("JioTV_Auto.m3u8", "w", encoding="utf-8") as f:
     f.write("\n".join(final_playlist) + "\n")
 
-print("Success! Plain updated playlist generated.")
+print("Success! Verified and Fallback playlist generated.")
