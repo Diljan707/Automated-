@@ -1,33 +1,56 @@
-name: Update M3U Playlist
+name: Update IPTV Playlist
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          echo "FFmpeg location:"
+          which ffmpeg
+          echo "FFmpeg version:"
+          ffmpeg -version
+
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.x"
 
-      - name: Install Dependencies
-        run: pip install requests
-
-      - name: Run Script
-        run: python3 update_playlist.py
-
-      - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Python packages
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          python -m pip install --upgrade pip
+          python -m pip install requests
+
+      - name: Run playlist checker
+        run: |
+          which ffmpeg
+          ffmpeg -version
+          python update_playlist.py
+
+      - name: Commit updated playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add JioTV_Auto.m3u8
-          git commit -m "Auto-update JioTV_Auto.m3u8 playlist [skip ci]" || exit 0
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No playlist changes."
+          else
+            git commit -m "Auto update playlist"
+            git push
+          fi
