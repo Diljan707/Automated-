@@ -1,6 +1,10 @@
 import re
 import requests
 
+# =========================================================
+# PLAYLIST URLS
+# =========================================================
+
 url_1173 = "https://raw.githubusercontent.com/Diljan707/Automated-/refs/heads/main/JioTV_Auto.m3u"
 url_958 = "https://jhs-channels.rtxcric.workers.dev/playlist.m3u"
 url_zee = "https://raw.githubusercontent.com/Sflex0719/STBPLUS/refs/heads/main/Zio.m3u"
@@ -10,12 +14,62 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
+# =========================================================
+# HTTP STATUS WHICH SHOULD TRIGGER FALLBACK
+# =========================================================
+
+ERROR_STATUSES = {
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    408,
+    410,
+    429,
+    500,
+    501,
+    502,
+    503,
+    504
+}
+
+# 302 is handled separately because redirect is disabled.
+ERROR_STATUSES.add(302)
+
+
+# =========================================================
+# FETCH PLAYLIST
+# =========================================================
+
 def fetch_playlist(url):
+
     try:
-        r = requests.get(url, timeout=15, headers=HEADERS)
-        return r.text.splitlines() if r.status_code == 200 else []
+        r = requests.get(
+            url,
+            timeout=15,
+            headers=HEADERS
+        )
+
+        if r.status_code == 200:
+            print(f"[PLAYLIST OK] {url}")
+            return r.text.splitlines()
+
+        print(
+            f"[PLAYLIST ERROR] "
+            f"{url} -> {r.status_code}"
+        )
+
+        return []
+
     except Exception as e:
-        print(f"Playlist fetch error: {e}")
+
+        print(
+            f"[PLAYLIST ERROR] "
+            f"{url} -> {e}"
+        )
+
         return []
 
 
@@ -25,15 +79,23 @@ lines_zee = fetch_playlist(url_zee)
 lines_sony = fetch_playlist(url_sony)
 
 
+# =========================================================
+# PARSE CHANNELS
+# =========================================================
+
 def parse_channels(lines):
+
     channels = {}
+
     i = 0
 
     while i < len(lines):
+
         if lines[i].startswith("#EXTINF"):
+
             extinf = lines[i]
 
-            # group-title remove
+            # Remove group-title
             extinf = re.sub(
                 r'group-title="[^"]*"\s*',
                 '',
@@ -41,16 +103,27 @@ def parse_channels(lines):
             )
 
             block = [extinf]
+
             i += 1
 
-            while i < len(lines) and not lines[i].startswith("#EXTINF"):
+            while (
+                i < len(lines)
+                and not lines[i].startswith("#EXTINF")
+            ):
                 block.append(lines[i])
                 i += 1
 
-            name = extinf.split(",")[-1].strip().lower()
+            name = (
+                extinf
+                .split(",")[-1]
+                .strip()
+                .lower()
+            )
+
             channels[name] = block
 
         else:
+
             i += 1
 
     return channels
@@ -62,9 +135,10 @@ ch_zee = parse_channels(lines_zee)
 ch_sony = parse_channels(lines_sony)
 
 
-# --------------------------------------------------
-# 1. 1173 playlist vicho Star Sports, Zee, Sony Pal remove
-# --------------------------------------------------
+# =========================================================
+# 1. 1173 CHANNELS
+# REMOVE STAR SPORTS / ZEE / SONY PAL
+# =========================================================
 
 final_list = {}
 
@@ -80,9 +154,9 @@ for n, b in ch_1173.items():
     final_list[n] = b
 
 
-# --------------------------------------------------
-# 2. 958 playlist vicho selected Star Sports Digital
-# --------------------------------------------------
+# =========================================================
+# 2. ADD SELECTED STAR SPORTS DIGITAL
+# =========================================================
 
 target_star_channels = {
     "star sports 1 digital",
@@ -95,13 +169,16 @@ target_star_channels = {
 
 for n, b in ch_958.items():
 
-    if any(target in n for target in target_star_channels):
+    if any(
+        target in n
+        for target in target_star_channels
+    ):
         final_list[n] = b
 
 
-# --------------------------------------------------
-# 3. Zio playlist vicho Zee channels
-# --------------------------------------------------
+# =========================================================
+# 3. ADD ZEE CHANNELS
+# =========================================================
 
 for n, b in ch_zee.items():
 
@@ -109,9 +186,9 @@ for n, b in ch_zee.items():
         final_list[n] = b
 
 
-# --------------------------------------------------
-# 4. Sony Pal + Sony Ten 1-6
-# --------------------------------------------------
+# =========================================================
+# 4. ADD SONY PAL + SONY TEN 1-6
+# =========================================================
 
 target_sony_keywords = {
     "sony pal",
@@ -125,13 +202,16 @@ target_sony_keywords = {
 
 for n, b in ch_sony.items():
 
-    if any(keyword in n for keyword in target_sony_keywords):
+    if any(
+        keyword in n
+        for keyword in target_sony_keywords
+    ):
         final_list[n] = b
 
 
-# --------------------------------------------------
-# Get stream URL
-# --------------------------------------------------
+# =========================================================
+# GET STREAM URL FROM CHANNEL BLOCK
+# =========================================================
 
 def get_stream_url(block):
 
@@ -139,16 +219,18 @@ def get_stream_url(block):
 
         line = line.strip()
 
-        if line and not line.startswith("#"):
+        if (
+            line
+            and not line.startswith("#")
+        ):
             return line
 
     return ""
 
 
-# --------------------------------------------------
-# Check URL
-# 401 / 403 / 302 = BROKEN
-# --------------------------------------------------
+# =========================================================
+# CHECK STREAM
+# =========================================================
 
 def check_stream(url):
 
@@ -157,7 +239,11 @@ def check_stream(url):
 
     try:
 
-        # HEAD request WITHOUT following redirects
+        # ---------------------------------------------
+        # HEAD
+        # Redirects disabled
+        # ---------------------------------------------
+
         res = requests.head(
             url,
             timeout=5,
@@ -167,17 +253,20 @@ def check_stream(url):
 
         status = res.status_code
 
-        # These statuses should trigger fallback
-        if status in (401, 403, 302):
+        res.close()
+
+        # Clear HTTP errors
+        if status in ERROR_STATUSES:
             return False, status
 
         # 200 = working
         if status == 200:
             return True, status
 
-        # Some servers don't support HEAD.
-        # Try GET, again WITHOUT redirects.
-        res.close()
+        # ---------------------------------------------
+        # Some servers don't support HEAD
+        # Try GET
+        # ---------------------------------------------
 
         res = requests.get(
             url,
@@ -189,91 +278,194 @@ def check_stream(url):
 
         status = res.status_code
 
-        if status in (401, 403, 302):
+        if status in ERROR_STATUSES:
+
             res.close()
+
             return False, status
 
         if status == 200:
+
             res.close()
+
             return True, status
 
         res.close()
 
-        return False, status
+        # ---------------------------------------------
+        # IMPORTANT:
+        # 451 is NOT treated as broken.
+        # Unknown statuses are also kept.
+        # ---------------------------------------------
+
+        return True, status
 
     except Exception as e:
+
+        print(
+            f"[CONNECTION ERROR] {e}"
+        )
 
         return False, None
 
 
-# --------------------------------------------------
-# Smart fallback
-# --------------------------------------------------
+# =========================================================
+# SMART FALLBACK
+#
+# ORIGINAL FAILED
+#       ↓
+# ZEE EXISTS?
+#       ↓
+# CHECK ZEE
+#       ↓
+# ZEE WORKING -> USE ZEE
+# ZEE FAILED  -> KEEP ORIGINAL
+# =========================================================
 
 verified_list = {}
 
-for n, b in final_list.items():
+for n, original_block in final_list.items():
 
-    stream_url = get_stream_url(b)
+    original_url = get_stream_url(
+        original_block
+    )
 
-    working, status = check_stream(stream_url)
+    original_working, original_status = check_stream(
+        original_url
+    )
 
-    # 401 / 403 / 302 or other failed status
-    if not working:
+    # -----------------------------------------------------
+    # ORIGINAL WORKING
+    # -----------------------------------------------------
 
-        # Same channel exists in Zee source
-        if n in ch_zee:
+    if original_working:
+
+        print(
+            f"[OK/KEEP] {n} | "
+            f"Status: {original_status}"
+        )
+
+        verified_list[n] = original_block
+
+        continue
+
+
+    # -----------------------------------------------------
+    # ORIGINAL FAILED
+    # -----------------------------------------------------
+
+    print(
+        f"[ORIGINAL FAILED] {n} | "
+        f"Status: {original_status}"
+    )
+
+
+    # -----------------------------------------------------
+    # CHECK ZEE FALLBACK
+    # -----------------------------------------------------
+
+    if n in ch_zee:
+
+        zee_block = ch_zee[n]
+
+        zee_url = get_stream_url(
+            zee_block
+        )
+
+        zee_working, zee_status = check_stream(
+            zee_url
+        )
+
+
+        # ---------------------------------------------
+        # ZEE WORKING
+        # ---------------------------------------------
+
+        if zee_working:
 
             print(
-                f"[FALLBACK] {n} | "
-                f"Status: {status} | "
-                f"Using Zee source"
+                f"[ZEE FALLBACK OK] {n} | "
+                f"Zee Status: {zee_status}"
             )
 
-            verified_list[n] = ch_zee[n]
+            verified_list[n] = zee_block
+
+
+        # ---------------------------------------------
+        # ZEE ALSO FAILED
+        # KEEP ORIGINAL
+        # ---------------------------------------------
 
         else:
 
             print(
-                f"[KEEP] {n} | "
-                f"Status: {status} | "
-                f"No Zee fallback available"
+                f"[ZEE FAILED] {n} | "
+                f"Zee Status: {zee_status} | "
+                f"KEEPING ORIGINAL"
             )
 
-            verified_list[n] = b
+            verified_list[n] = original_block
+
+
+    # -----------------------------------------------------
+    # NO ZEE FALLBACK
+    # KEEP ORIGINAL
+    # -----------------------------------------------------
 
     else:
 
         print(
-            f"[OK] {n} | Status: {status}"
+            f"[NO ZEE FALLBACK] {n} | "
+            f"Keeping original"
         )
 
-        verified_list[n] = b
+        verified_list[n] = original_block
 
 
-# --------------------------------------------------
-# Generate final playlist
-# --------------------------------------------------
+# =========================================================
+# CREATE FINAL M3U
+# =========================================================
 
-final_playlist = ["#EXTM3U"]
+final_playlist = [
+    "#EXTM3U"
+]
 
-for b in verified_list.values():
-    final_playlist.extend(b)
+for block in verified_list.values():
 
+    final_playlist.extend(block)
+
+
+# =========================================================
+# WRITE FILE
+# =========================================================
+
+output_file = "JioTV_Auto.m3u8"
 
 with open(
-    "JioTV_Auto.m3u8",
+    output_file,
     "w",
     encoding="utf-8"
 ) as f:
 
     f.write(
-        "\n".join(final_playlist) + "\n"
+        "\n".join(final_playlist)
+        + "\n"
     )
 
 
+# =========================================================
+# COMPLETE
+# =========================================================
+
 print()
-print("====================================")
-print("Success! Smart Fallback playlist generated.")
-print("File: JioTV_Auto.m3u8")
-print("====================================")
+print("==========================================")
+print("SUCCESS!")
+print("==========================================")
+print(
+    f"Final playlist: {output_file}"
+)
+print(
+    f"Total channels: {len(verified_list)}"
+)
+print("No channel was removed.")
+print("==========================================")
