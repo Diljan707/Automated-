@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>IP Manager - bK8W5i</title>
+    <title>IP Manager - scwHMs</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -369,11 +369,11 @@
             <div class="token-info">
                 <div class="token-info-row">
                     <span class="token-info-label">Token ID:</span>
-                    <span class="token-info-value">bK8W5i</span>
+                    <span class="token-info-value">scwHMs</span>
                 </div>
                 <div class="token-info-row">
                     <span class="token-info-label">Expires At:</span>
-                    <span class="token-info-value">19-08-2026 06:12:21 AM</span>
+                    <span class="token-info-value">19-08-2026 06:15:22 AM</span>
                 </div>
                 <div class="token-info-row">
                     <span class="token-info-label">Status:</span>
@@ -400,23 +400,23 @@
                             <div class="ip-list">
                                                                     <div class="ip-item">
                             <div class="ip-info">
-                                <div class="ip-address">203.0.113.90</div>
-                                <div class="ip-date">19-08-2026 06:07:22 AM</div>
+                                <div class="ip-address">203.0.113.181</div>
+                                <div class="ip-date">19-08-2026 06:10:22 AM</div>
                             </div>
                             <form method="post" onsubmit="return confirm('Remove this IP address?');" style="display: inline;">
                                 <input type="hidden" name="action" value="delete_ip">
-                                <input type="hidden" name="ip" value="203.0.113.90">
+                                <input type="hidden" name="ip" value="203.0.113.181">
                                 <button type="submit" class="btn btn-danger">Remove</button>
                             </form>
                         </div>
                                                                     <div class="ip-item">
                             <div class="ip-info">
-                                <div class="ip-address">203.0.113.86</div>
-                                <div class="ip-date">19-08-2026 06:07:21 AM</div>
+                                <div class="ip-address">203.0.113.45</div>
+                                <div class="ip-date">19-08-2026 06:10:22 AM</div>
                             </div>
                             <form method="post" onsubmit="return confirm('Remove this IP address?');" style="display: inline;">
                                 <input type="hidden" name="action" value="delete_ip">
-                                <input type="hidden" name="ip" value="203.0.113.86">
+                                <input type="hidden" name="ip" value="203.0.113.45">
                                 <button type="submit" class="btn btn-danger">Remove</button>
                             </form>
                         </div>
