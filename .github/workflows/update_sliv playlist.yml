@@ -1,0 +1,30 @@
+name: Update M3U Playlist
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # ਇਹ ਹਰ 15 ਮਿੰਟ ਬਾਅਦ ਚੱਲੇਗਾ
+  workflow_dispatch: # ਇਸ ਨਾਲ ਤੁਸੀਂ ਬਟਨ ਦਬਾ ਕੇ ਵੀ ਮੈਨੂਅਲ ਚਲਾ ਸਕਦੇ ਹੋ
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Run Script
+        run: node index.js
+
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "bot@github.com"
+          git add playlist.m3u
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update M3U playlist [skip ci]" && git push)
