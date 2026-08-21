@@ -9955,7 +9955,7 @@ https://jcevents.hotstar.com/bpk-tv/4db6f833701e78ae4443cb268020f03b/Fallback/4d
 
 #EXTINF:-1 tvg-id="1090539891_ENG" group-title="Live events" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022536/178714233084718_eng_vs_pak_live_1Test_day3_live_landscape_thumb.jpg",Sony: Day 3 - 1st Test
 #EXTVLCOPT:http-user-agent=Denver1769
-https://sonydaimenew.akamaized.net/hls/live/20000296/England_2108/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787350353~acl=/*~id=99044900092386879030624914725686~hmac=56e88deba82acb0938a62ae78ee4b345dd2fb903a1cb90bf4fbd49cfad902579
+https://sonydaimenew.akamaized.net/hls/live/20000296/England_2108/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787352178~acl=/*~id=67184187530337103223908885756656~hmac=ac3830beb40710f3f85eb75890791f5683ce3247ca4cde602d7d7710d688d790
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c97d1d237fdefabf8e964f020040d845:359d85ff22870e20bff9737ab2942149
