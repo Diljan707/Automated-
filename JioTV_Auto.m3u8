@@ -8140,6 +8140,9 @@ https://jiotvbpkstb.cdn.jio.com/bpk-tv/ZeeKeralamHD_BTS/WDVLive/index.mpd?|Cooki
 #EXTHTTP:{"cookie":"__hdnea__=st=1787325507~exp=1787347107~acl=/bpk-tv/ZeeTeluguHD_BTS/WDVLive/*~hmac=65b87d82aa4f908c78d1d24a38b849562536524536d7b1efd1b3511f233f93a0"}
 https://jiotvbpkstb.cdn.jio.com/bpk-tv/ZeeTeluguHD_BTS/WDVLive/index.mpd?|Cookie=__hdnea__=st=1787325507~exp=1787347107~acl=/bpk-tv/ZeeTeluguHD_BTS/WDVLive/*~hmac=65b87d82aa4f908c78d1d24a38b849562536524536d7b1efd1b3511f233f93a0&xxx=%7Ccookie=__hdnea__=st=1787325507~exp=1787347107~acl=/bpk-tv/ZeeTeluguHD_BTS/WDVLive/*~hmac=65b87d82aa4f908c78d1d24a38b849562536524536d7b1efd1b3511f233f93a0
 
+#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Ten_HD.png",SONY TEN 1 HD
+https://dishmt.slivcdn.com/hls/live/2011747/TEN1HD/hdntl=exp=1787415067~acl=%2f*~id=71533a72-ac59-412e-9d42-7ed991758d20~data=hdntl~hmac=873cbeb9d350cbe4d981679c39c75b68e61af41aad3e4ad4aeb4e416a325b6ae/master_3500.m3u8?aka_me_session_id=AAAAAAAAAAAbyolqAAAAANPGp9m6wDcZb1je3xbFnJKSeP9D3kHfUetheQSi0q5F0d8mi1P4nX3gf3oFf4tOPjEO1VhKWYpQ&aka_media_format_type=hls
+
 #EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Ten_1.png",SONY TEN 1
 https://dishmt.slivcdn.com/hls/live/2011739/TEN1SD/hdntl=exp=1787415067~acl=%2f*~id=71533a72-ac59-412e-9d42-7ed991758d20~data=hdntl~hmac=873cbeb9d350cbe4d981679c39c75b68e61af41aad3e4ad4aeb4e416a325b6ae/master_3500.m3u8?aka_me_session_id=AAAAAAAAAAAbyolqAAAAANPGp9m6wDcZb1je3xbFnJKSeP9D3kHfUetheQSi0q5F0d8mi1P4nX3gf3oFf4tOPjEO1VhKWYpQ&aka_media_format_type=hls
 
