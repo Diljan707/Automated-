@@ -1,10 +1,12 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000021743/1785703750315390_DP_World_Tour_Nexo_Championship_day3_landscape_thumb.jpg" group-title="Golf",DP World Tour
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090539982
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022642/1787294349221332_Durand_Cup_26_Final_East-Bengal-vs-Mohun-Bagan-Super-Giant_Promo_DDT_landscape_thumb.jpg" group-title="Football",Upcoming - Durand Cup 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090536986
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022564/178715365712926_SL_vs_IND_2nd_Test_landscape_thumb_Dated.jpg" group-title="Cricket",Upcoming - India Tour of Sri Lanka 2nd Test
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090539595
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022418/178704318120860_asia_cup_w26_dated_rev_landscape_thumb.jpg" group-title="Cricket",Upcoming - ACC Women's Asia Cup 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090538884
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022642/1787294349221332_Durand_Cup_26_Final_East-Bengal-vs-Mohun-Bagan-Super-Giant_Promo_DDT_landscape_thumb.jpg" group-title="Football",Upcoming - Durand Cup 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090536986
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022658/1787312709559403_AsiaCup26_Harmanpreet_Promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - ACC Women's Asia Cup 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090540021
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022603/1787230188057421_womens_AC26_IND_vs_PAK_dated_landscape_thumb.jpg" group-title="Cricket",Upcoming - ACC Women's Asia Cup 2026
