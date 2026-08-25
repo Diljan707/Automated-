@@ -9086,19 +9086,45 @@ https://dev.denver69.fun/Mozzz/UNITESSPORTS2/master.m3u8
 #https://port.denver69.fun/Kids/shinchan.m3u8
 #EXTM3U
 
-#EXTINF:-1 tvg-id="4248151_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ATP-250---Winston-Salem-Open-2026-old.png", FC: ATP 250 - Winston-Salem Open 2026 [English]
+#EXTINF:-1 tvg-id="4248440_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248440_53036_HYK_NZ-A_fc-web_1787393618652.jpg", FC: Top End T20 Series, 2026 [English]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248151_english_hls_c400dbc4a246695_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787680293~_GO=Generated~acl=/mumbai/4248151_english_hls_c400dbc4a246695_1ta-di_h264/*~Signature=ARB3KG1THe_YT04WcRn79rSoiKbiTMAo5js0e35qS8ElkX-caNUDtN0wr23knZ_LJlDg_-3GmHsDUbyYCRc0KdoVQgUF
+https://in-mc-flive.fancode.com/mumbai/4248440_english_hls_fddf53e1c144358_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787719762~_GO=Generated~acl=/mumbai/4248440_english_hls_fddf53e1c144358_1ta-di_h264/*~Signature=ARB3KG1SRY78G0lF96ltn9LEpF4ZjrwllrfdJyD5VPW18sc7dQdjXev1_sCSAVUszz5WI-m-YzR0QqsmZ79VS8Sx9hkP
 
-#EXTINF:-1 tvg-id="4248434_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248434_53036_NTS_ACT_fc-web_1787393618710.jpg", FC: Top End T20 Series, 2026 [English]
-#EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248434_english_hls_fd5b53d92780055_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787703375~_GO=Generated~acl=/mumbai/4248434_english_hls_fd5b53d92780055_1ta-di_h264/*~Signature=ARB3KG2PpQVSc1s1D1wuCuB3t-B33j_5S3UeGiwXXmhvN6k27OgyoSGZMlXcc32rsd3ieTVG2z3Tx6ncAnu_yBCGsb8K
+#EXTINF:-1 tvg-id="1090540240_ENG" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2105079/cricodi2508/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787681848~acl=/*~id=74400904677696554858932964730672~hmac=98ed936882a3cea04138fda71a3cfe3b1faf7e4901a683401076e00476f32e0b
+
+#EXTINF:-1 tvg-id="1090540240_HIN" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2105080/cricodi2508/HIN/std_lrh-800300010.m3u8?hdnea=exp=1787681848~acl=/*~id=74400904677696554858932964730672~hmac=98ed936882a3cea04138fda71a3cfe3b1faf7e4901a683401076e00476f32e0b
+
+#EXTINF:-1 tvg-id="1090540240_TAM" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2094590/cricodi2508/TAM/std_lrh-800300010.m3u8?hdnea=exp=1787681848~acl=/*~id=74400904677696554858932964730672~hmac=98ed936882a3cea04138fda71a3cfe3b1faf7e4901a683401076e00476f32e0b
+
+#EXTINF:-1 tvg-id="1090540240_TEL" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2037143/cricodi2508/TEL/std_lrh-800300010.m3u8?hdnea=exp=1787681848~acl=/*~id=74400904677696554858932964730672~hmac=98ed936882a3cea04138fda71a3cfe3b1faf7e4901a683401076e00476f32e0b
+
+#EXTINF:-1 tvg-id="1090540240_KAN" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2043696/cricodi2508/KAN/std_lrh-800300010.m3u8?hdnea=exp=1787681848~acl=/*~id=74400904677696554858932964730672~hmac=98ed936882a3cea04138fda71a3cfe3b1faf7e4901a683401076e00476f32e0b
+
+#EXTINF:-1 tvg-id="1090540287_ENG" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022846/1787588203291677_JPL_Mumbai_Kings_vs_Chennai_Strikers_live_landscape_thumb.jpg",Sony: Mumbai Kings vs Chennai Strikers
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2094588/Cricket_2508/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787681848~acl=/*~id=74400904677696554858932964730672~hmac=98ed936882a3cea04138fda71a3cfe3b1faf7e4901a683401076e00476f32e0b
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=5d2d4d2227a66e5c7035c57574c9ab7d:47476e01265b44071ecdbea27afe50c6
-#EXTINF:-1 tvg-id="amzn1.dv.gti.79238516-163d-4a1a-bf3b-c5014bb4884b" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.79238516-163d-4a1a-bf3b-c5014bb4884b/3/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: Top End T20 Series 2026 - 13th Match - New Zealand A vs HH Kingsmen
+#KODIPROP:inputstream.adaptive.license_key=014dad48bdad226871724125e6b67265:995f0c342999b9a6d84ae5298f7b07e5
+#EXTINF:-1 tvg-id="amzn1.dv.gti.669d70b3-1511-48dc-a605-fb1c6f1e1b26" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.669d70b3-1511-48dc-a605-fb1c6f1e1b26/6/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: India tour of Sri Lanka 2026 - 2nd Test - Sri Lanka vs India
 #EXTVLCOPT:http-user-agent=Denver1769
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/eknvmowppi/out/v1/2bcb198ee66a4f888dc359ee93f621bb/cenc.mpd
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/3fikqpis1e/out/v1/4a5f75e4e85747b5a92d844bbfe03ed2/cenc.mpd
+
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e3ca5ea3f0853201a03cf37da1933085:afa2827d696fd7f3ec2d17b180c84628
+#EXTINF:-1 tvg-id="amzn1.dv.gti.92fd6680-7576-4c4a-92dc-58403608e51d" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.92fd6680-7576-4c4a-92dc-58403608e51d/2/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: Top End T20 Series 2026 - 14th Match - New Zealand A vs HH Kingsmen
+#EXTVLCOPT:http-user-agent=Denver1769
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/ig1xnuukp5/out/v1/0c2b727a60bc41bebae45f1a92b627ef/cenc.mpd
 
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
