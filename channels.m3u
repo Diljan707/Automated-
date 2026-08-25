@@ -9095,51 +9095,37 @@ https://dev.denver69.fun/Mozzz/UNITESSPORTS2/master.m3u8
 #https://port.denver69.fun/Kids/shinchan.m3u8
 #EXTM3U
 
-#EXTINF:-1 tvg-id="4248355_HIN" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248355_53029_KAN_MER_FC-Web_1786702851612.png", FC: Uttar Pradesh T20 League, 2026 [Hindi]
+#EXTINF:-1 tvg-id="4248004_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248004_53005_PD_EDR_fc-Web.png", FC: Delhi Premier League, 2026 [English]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248355_hindi_hls_40b5b0721512679_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787736144~_GO=Generated~acl=/mumbai/4248355_hindi_hls_40b5b0721512679_1ta-di_h264/*~Signature=ARB3KG06rjjfGnex-ZK-mjzO04FUBcY_cEtrmnu6TleoiUb6A87YzMGqJG34Sy_JVJGwZE0b4M7euwduCTZcAD_VoB0G
+https://in-mc-flive.fancode.com/mumbai/4248004_english_hls_b2bcafa05d74311_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787750114~_GO=Generated~acl=/mumbai/4248004_english_hls_b2bcafa05d74311_1ta-di_h264/*~Signature=ARB3KG3gwAMh9SeoBYe_aND68SyzN_2jb1jKGz2M27kkp9AqoEtVt25jOyRsD4EZFKBmHNhEanc9gRsQPL9XYtYWFREI
 
-#EXTINF:-1 tvg-id="4248355_BHO" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248355_53029_KAN_MER_FC-Web_1786702851612.png", FC: Uttar Pradesh T20 League, 2026 [Bhojpuri]
+#EXTINF:-1 tvg-id="4248354_HIN" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248354_53029_LCK_KAS_FC-Web_1786702851634.png", FC: Uttar Pradesh T20 League, 2026 [Hindi]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248355_bhojpuri_hls_9bbc035c8696035_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787736144~_GO=Generated~acl=/mumbai/4248355_bhojpuri_hls_9bbc035c8696035_1ta-di_h264/*~Signature=ARB3KG1_DzBPqsUMYGGRZUC28bsS6b46AQfghmDeNQnVbNLVLh5wl1YeV0P0CKX885iA9NTyZpwvxFSZmDoAptOgFEUM
+https://in-mc-flive.fancode.com/mumbai/4248354_hindi_hls_add508635c1531_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787751936~_GO=Generated~acl=/mumbai/4248354_hindi_hls_add508635c1531_1ta-di_h264/*~Signature=ARB3KG1pXkIjU2mbQE7Kkh-NsddK3QeyV0MuLSi8RmiAuyAldIVRpHGFemRb_h_bq-lOcPeVaxY5XU4WNwVPwb1FBF0L
 
-#EXTINF:-1 tvg-id="4248433_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248433_53036_ACA_BAN-HP_fc-web_1787393618656.jpg", FC: Top End T20 Series, 2026 [English]
+#EXTINF:-1 tvg-id="4248354_BHO" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248354_53029_LCK_KAS_FC-Web_1786702851634.png", FC: Uttar Pradesh T20 League, 2026 [Bhojpuri]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248433_english_hls_c1fc1578b687330_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787736145~_GO=Generated~acl=/mumbai/4248433_english_hls_c1fc1578b687330_1ta-di_h264/*~Signature=ARB3KG0wQOQRAkqHVTrI2mHYU-ErHa2x9sOhUMkwUNSBdxHvzymYkZ1w3NvxX5Brvdij0NPvTsVQAP2snTKi0mQiJ_IN
+https://in-mc-flive.fancode.com/mumbai/4248354_bhojpuri_hls_fa7af942e667778_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787751937~_GO=Generated~acl=/mumbai/4248354_bhojpuri_hls_fa7af942e667778_1ta-di_h264/*~Signature=ARB3KG20bKP_5NqFN1JC5g-g-9tjDSmy0ZUK3HmilT6Nrct_xT9S_3TQLLpFeo13C1i2tyn6Kjci0E1H_qzIhwZk874G
 
-#EXTINF:-1 tvg-id="4248515_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248515_53041_RR_BK_FC-Web.jpg", FC: Uttarkashi T20 League 2026 [English]
+#EXTINF:-1 tvg-id="4248277_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248277_53025_ABC_AKH_FC-Web.png", FC: Roshn Saudi League 2026-2027 [English]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248515_english_hls_3c390b0e0028871_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787746471~_GO=Generated~acl=/mumbai/4248515_english_hls_3c390b0e0028871_1ta-di_h264/*~Signature=ARB3KG1rnuR0rZebxK4wxzxDvaTnI33obFWkOluKVyjdfhxv8vUooiXRqy_609aVt9aMiQyXyBKlQwog_-ifgSJuLcgE
+https://in-mc-flive.fancode.com/mumbai/4248277_english_hls_8a4acdd26847016_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787759855~_GO=Generated~acl=/mumbai/4248277_english_hls_8a4acdd26847016_1ta-di_h264/*~Signature=ARB3KG3tp1UXBakS5BvDKeMFGq0GnvErYt_09I2NIOQ4feh_83SN6p4e5uwRbNYF6BGV8nLSDojxbMXsrWMweMOrt5AP
 
-#EXTINF:-1 tvg-id="1090540240_ENG" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
-#EXTVLCOPT:http-user-agent=Denver1769
-https://sonydaimenew.akamaized.net/hls/live/2105079/cricodi2508/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787703220~acl=/*~id=22507647039435605372162162768236~hmac=ff78f9754346a4eb89534c055549b0ec3d6400f1731f779283dba1c255e5b255
+#EXTINF:-1 tvg-id="4248278_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248278_53025_ETT_ANF_FC-Web.png", FC: Roshn Saudi League 2026-2027 [English]
+#EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
+https://in-mc-flive.fancode.com/mumbai/4248278_english_hls_69bf822e2980299_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787766548~_GO=Generated~acl=/mumbai/4248278_english_hls_69bf822e2980299_1ta-di_h264/*~Signature=ARB3KG1y8MIs4FgKXRIfbtOSA_6aSZ6I75iG42Vx2er7AQvf1lmm90o1L1-GV1XX2MyQVPp03FfnzE3l9lgY4iVioGYA
 
-#EXTINF:-1 tvg-id="1090540240_HIN" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
-#EXTVLCOPT:http-user-agent=Denver1769
-https://sonydaimenew.akamaized.net/hls/live/2105080/cricodi2508/HIN/std_lrh-800300010.m3u8?hdnea=exp=1787703220~acl=/*~id=22507647039435605372162162768236~hmac=ff78f9754346a4eb89534c055549b0ec3d6400f1731f779283dba1c255e5b255
+#EXTINF:-1 tvg-id="4248152_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ATP-250---Winston-Salem-Open-2026-old.png", FC: ATP 250 - Winston-Salem Open 2026 [English]
+#EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
+https://in-mc-flive.fancode.com/mumbai/4248152_english_hls_9b97d8377551599_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787766550~_GO=Generated~acl=/mumbai/4248152_english_hls_9b97d8377551599_1ta-di_h264/*~Signature=ARB3KG0pcJEA55xTLGA1M6zqtIIH2rziM9bVMB-dSaYlXddAgSD7KHNhOb9SVz09rS3ohM1NHr9-jNE3OiIoujXZ_D8K
 
-#EXTINF:-1 tvg-id="1090540240_TAM" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
+#EXTINF:-1 tvg-id="1090540287_ENG" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022867/1787641635206448_JPL26_ROYALS_HYDERABAD_vs_MUMBAI_SOBO_STARS_landscape_thumb.jpg",Sony: Royals Hyderabad vs Mumbai Sobo Stars
 #EXTVLCOPT:http-user-agent=Denver1769
-https://sonydaimenew.akamaized.net/hls/live/2094590/cricodi2508/TAM/std_lrh-800300010.m3u8?hdnea=exp=1787703220~acl=/*~id=22507647039435605372162162768236~hmac=ff78f9754346a4eb89534c055549b0ec3d6400f1731f779283dba1c255e5b255
+https://sonydaimenew.akamaized.net/hls/live/20000293/criclive2508/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787724511~acl=/*~id=60745023129868244341117981971366~hmac=27ccaea991e6676800106af40f45369ac3c402b10fb6e898268fcdecf351e2b5
 
-#EXTINF:-1 tvg-id="1090540240_TEL" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
+#EXTINF:-1 tvg-id="1090540257_ENG" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022595/1787036925019926_UCL_26_Play-offs-Leg2_Sabah-vs-H-Beer-Sheva_live_landscape_thumb.jpg",Sony: Sabah vs H Beer-Sheva - Play-offs - Leg 2
 #EXTVLCOPT:http-user-agent=Denver1769
-https://sonydaimenew.akamaized.net/hls/live/2037143/cricodi2508/TEL/std_lrh-800300010.m3u8?hdnea=exp=1787703220~acl=/*~id=22507647039435605372162162768236~hmac=ff78f9754346a4eb89534c055549b0ec3d6400f1731f779283dba1c255e5b255
-
-#EXTINF:-1 tvg-id="1090540240_KAN" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022838/178758315014528_SL_vs_IND_2nd_Test_Day3_live_landscape_thumb.jpg",Sony: Day 3 - 2nd Test
-#EXTVLCOPT:http-user-agent=Denver1769
-https://sonydaimenew.akamaized.net/hls/live/2043696/cricodi2508/KAN/std_lrh-800300010.m3u8?hdnea=exp=1787703220~acl=/*~id=22507647039435605372162162768236~hmac=ff78f9754346a4eb89534c055549b0ec3d6400f1731f779283dba1c255e5b255
-
-#EXTINF:-1 tvg-id="1090540287_ENG" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022862/1787639833874927_JPL26_PUNE_PESHWAS_vs_CHENNAI_STRIKERS_landscape_thumb.jpg",Sony: Pune Peshwas vs Chennai Strikers
-#EXTVLCOPT:http-user-agent=Denver1769
-https://sonydaimenew.akamaized.net/hls/live/2094588/Cricket_2508/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787703220~acl=/*~id=22507647039435605372162162768236~hmac=ff78f9754346a4eb89534c055549b0ec3d6400f1731f779283dba1c255e5b255
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=b37668af3e8387db12ea862a88928ffb:21f9d5fc7e1fb5eac435846a9e17d422
-#EXTINF:-1 tvg-id="amzn1.dv.gti.da19826b-2823-42b1-af6d-a78cac5bd2d6" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.da19826b-2823-42b1-af6d-a78cac5bd2d6/3/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: Top End T20 Series 2026 - 15th Match - Adelaide Strikers Academy vs Bangladesh HP
-#EXTVLCOPT:http-user-agent=Denver1769
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/qpfgibzuwz/out/v1/00cd75fb9e3647189a13ae0685098134/cenc.mpd
+https://sonydaimenew.akamaized.net/hls/live/20000292/UCL_matc2508/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787724511~acl=/*~id=60745023129868244341117981971366~hmac=27ccaea991e6676800106af40f45369ac3c402b10fb6e898268fcdecf351e2b5
 
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
