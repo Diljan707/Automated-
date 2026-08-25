@@ -7713,9 +7713,9 @@ https://jiotvmblive.cdn.jio.com/bpk-tv/UIPMPentathlonWC_MOB/WDVLive/index.mpd?__
 #EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 #EXTVLCOPT:http-referrer=https://www.hotstar.com/
 #EXTVLCOPT:http-extra-headers=Origin: https://www.hotstar.com
-#EXTVLCOPT:http-cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3
-#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3"}
-https://livetv.hotstar.com/mp2/gec-india-1540073624/4a56d383d1074f3d908a7f9b7a3321f1/index.mpd?|cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
+#EXTVLCOPT:http-cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc
+#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc"}
+https://livetv.hotstar.com/mp2/gec-india-1540073624/4a56d383d1074f3d908a7f9b7a3321f1/index.mpd?|cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 
 #EXTINF:-1 tvg-name="Star Sports 1 Digital By @rtxcric" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7482/1782284567482-h" , Star Sports 1 Digital @rtxcric
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -7724,9 +7724,9 @@ https://livetv.hotstar.com/mp2/gec-india-1540073624/4a56d383d1074f3d908a7f9b7a33
 #EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 #EXTVLCOPT:http-referrer=https://www.hotstar.com/
 #EXTVLCOPT:http-extra-headers=Origin: https://www.hotstar.com
-#EXTVLCOPT:http-cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3
-#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3"}
-https://livetv.hotstar.com/mp1/gec-india-1540068247/9a6e7c30f9194cc1a6a6250cedb115fb/index.mpd?|cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
+#EXTVLCOPT:http-cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc
+#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc"}
+https://livetv.hotstar.com/mp1/gec-india-1540068247/9a6e7c30f9194cc1a6a6250cedb115fb/index.mpd?|cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 
 #EXTINF:-1 tvg-name="Star Sports 2 Digital By @rtxcric" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7957/1783000567957-h" , Star Sports 2 Digital @rtxcric
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -7735,9 +7735,9 @@ https://livetv.hotstar.com/mp1/gec-india-1540068247/9a6e7c30f9194cc1a6a6250cedb1
 #EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 #EXTVLCOPT:http-referrer=https://www.hotstar.com/
 #EXTVLCOPT:http-extra-headers=Origin: https://www.hotstar.com
-#EXTVLCOPT:http-cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3
-#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3"}
-https://livetv.hotstar.com/mp1/gec-india-1540068250/1d0752e2f605404886fec4ab49cc3350/index.mpd?|cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
+#EXTVLCOPT:http-cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc
+#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc"}
+https://livetv.hotstar.com/mp1/gec-india-1540068250/1d0752e2f605404886fec4ab49cc3350/index.mpd?|cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 
 #EXTINF:-1 tvg-name="Star Sports 2 Hindi Digital By @rtxcric" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6371/1783000736371-h" , Star Sports 2 Hindi Digital @rtxcric
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -7746,9 +7746,9 @@ https://livetv.hotstar.com/mp1/gec-india-1540068250/1d0752e2f605404886fec4ab49cc
 #EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 #EXTVLCOPT:http-referrer=https://www.hotstar.com/
 #EXTVLCOPT:http-extra-headers=Origin: https://www.hotstar.com
-#EXTVLCOPT:http-cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3
-#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3"}
-https://livetv.hotstar.com/mp2/gec-india-1540068298/9f99e1af0bdc465b8a3015e3a1a689d8/index.mpd?|cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
+#EXTVLCOPT:http-cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc
+#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc"}
+https://livetv.hotstar.com/mp2/gec-india-1540068298/9f99e1af0bdc465b8a3015e3a1a689d8/index.mpd?|cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 
 #EXTINF:-1 tvg-name="Star Sports 1 Hindi Digital By @rtxcric" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8867/1782284658867-h" , Star Sports 1 Hindi Digital @rtxcric
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -7757,9 +7757,9 @@ https://livetv.hotstar.com/mp2/gec-india-1540068298/9f99e1af0bdc465b8a3015e3a1a6
 #EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 #EXTVLCOPT:http-referrer=https://www.hotstar.com/
 #EXTVLCOPT:http-extra-headers=Origin: https://www.hotstar.com
-#EXTVLCOPT:http-cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3
-#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3"}
-https://livetv.hotstar.com/mp1/gec-india-1540068295/5a4eb3ac6e424eef8a30962d2232f80f/index.mpd?|cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
+#EXTVLCOPT:http-cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc
+#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc"}
+https://livetv.hotstar.com/mp1/gec-india-1540068295/5a4eb3ac6e424eef8a30962d2232f80f/index.mpd?|cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 
 #EXTINF:-1 tvg-name="Star Sports 3 Digital By @rtxcric" tvg-logo="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2523/1783001062523-h" , Star Sports 3 Digital @rtxcric
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -7768,9 +7768,9 @@ https://livetv.hotstar.com/mp1/gec-india-1540068295/5a4eb3ac6e424eef8a30962d2232
 #EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 #EXTVLCOPT:http-referrer=https://www.hotstar.com/
 #EXTVLCOPT:http-extra-headers=Origin: https://www.hotstar.com
-#EXTVLCOPT:http-cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3
-#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3"}
-https://livetv.hotstar.com/mp1/gec-india-1540068301/c776132a964441e1b929b2c0451222af/index.mpd?|cookie=hdntl=exp=1787713653~acl=%2f*~id=8dee584b2b7e9415de2955da044192f8~data=hdntl~hmac=8ca3e1a77c789122d0d5233515efa300b3c1ea95eca4e298aedfac4099cd2bb3&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
+#EXTVLCOPT:http-cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc
+#EXTHTTP:{"Origin":"https://www.hotstar.com","Referer":"https://www.hotstar.com/","Cookie":"hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc"}
+https://livetv.hotstar.com/mp1/gec-india-1540068301/c776132a964441e1b929b2c0451222af/index.mpd?|cookie=hdntl=exp=1787742899~acl=%2f*~id=c094783faa017ca0cfa3062c0dd32e03~data=hdntl~hmac=1339e5a3a7a206124ffd13e3f2fcea18314d03d6f82e73f951260575e7d508bc&referer=https://www.hotstar.com/&origin=https://www.hotstar.com&user-agent=Hotstar;in.startv.hotstar/25.02.24.8.11169@rtxcric(Android/15)
 
 #EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Ten_HD.png",SONY TEN 1 HD
 https://dishmt.slivcdn.com/hls/live/2011747/TEN1HD/hdntl=exp=1787725987~acl=%2f*~id=c5cf9986-e53a-4894-8bc9-34658180bc35~data=hdntl~hmac=a2cc9b74ab5573c16766288f56d5c9b57f71daa355707b4be849c1be7573e0e5/master_3500.m3u8?aka_me_session_id=AAAAAAAAAACjiI5qAAAAAMmEqGOK5ncGPUNz9LFhSvtHQLPPJxV9H75%2fL31XIpCh7Da1aVwEGE8XFu7fDLVfXAxQY%2fSnvn5x&aka_media_format_type=hls
