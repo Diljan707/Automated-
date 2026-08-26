@@ -9095,29 +9095,45 @@ https://dev.denver69.fun/Mozzz/UNITESSPORTS2/master.m3u8
 #https://port.denver69.fun/Kids/shinchan.m3u8
 #EXTM3U
 
-#EXTINF:-1 tvg-id="4248441_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248441_53036_NZ-A_VA_fc-web_1787393618588.jpg", FC: Top End T20 Series, 2026 [English]
+#EXTINF:-1 tvg-id="4248442_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248442_53036_ACA_HHA_fc-web_1787393618760.jpg", FC: Top End T20 Series, 2026 [English]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248441_english_hls_f2f617ef4b12783_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787790255~_GO=Generated~acl=/mumbai/4248441_english_hls_f2f617ef4b12783_1ta-di_h264/*~Signature=ARB3KG0XFGsyoE5d62Xh0Y3yKqUcCwkxZwi8sJXkXhzZmu4uEDDwRSjKTryM_wFTlC0S4UpN13TOAB_E9aTs6HN0UTID
+https://in-mc-flive.fancode.com/mumbai/4248442_english_hls_9dcd9a24b148467_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787806032~_GO=Generated~acl=/mumbai/4248442_english_hls_9dcd9a24b148467_1ta-di_h264/*~Signature=ARB3KG2bD28713XuTeVtTrmDm2wV5KFwlFPXowgL16rkcYsny88ZuyhMduYgbLRXoBMW3r67KQ8IFel7b0cCtjVFfOMC
 
-#EXTINF:-1 tvg-id="4248152_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ATP-250---Winston-Salem-Open-2026-old.png", FC: ATP 250 - Winston-Salem Open 2026 [English]
-#EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248152_english_hls_9b97d8377551599_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787766550~_GO=Generated~acl=/mumbai/4248152_english_hls_9b97d8377551599_1ta-di_h264/*~Signature=ARB3KG0pcJEA55xTLGA1M6zqtIIH2rziM9bVMB-dSaYlXddAgSD7KHNhOb9SVz09rS3ohM1NHr9-jNE3OiIoujXZ_D8K
+#EXTINF:-1 tvg-id="1090540354_ENG" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022839/178758435726079_SL_vs_IND_2nd_Test_Day4_live_landscape_thumb.jpg",Sony: Day 4 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2043696/cricodi2608/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787767001~acl=/*~id=67214365914149896551258173746047~hmac=f2efa36bdea07f2071245d99b4d833c55d5cc9fcc19bbf9e3def597fb890bd11
 
-#EXTINF:-1 tvg-id="4248295_ENG" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248295_53026_ABF_BT_FC-Web.png", FC: Caribbean Premier League, 2026 [English]
-#EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248295_english_hls_bf035d0bd610272_1ta-di_h264/1080p.m3u8?hdntl=Expires=1787783569~_GO=Generated~acl=/mumbai/4248295_english_hls_bf035d0bd610272_1ta-di_h264/*~Signature=ARB3KG0gaoLK2dBUvAgwtxLd7Aa0c7zRHAfvF0G8gAuEEuFoxNyZoRUxIXSdMIG4RhmHHSQMpVS2BkysTF9sHZBj9RwC
+#EXTINF:-1 tvg-id="1090540354_HIN" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022839/178758435726079_SL_vs_IND_2nd_Test_Day4_live_landscape_thumb.jpg",Sony: Day 4 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2105080/cricodi2608/HIN/std_lrh-800300010.m3u8?hdnea=exp=1787767001~acl=/*~id=67214365914149896551258173746047~hmac=f2efa36bdea07f2071245d99b4d833c55d5cc9fcc19bbf9e3def597fb890bd11
+
+#EXTINF:-1 tvg-id="1090540354_TAM" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022839/178758435726079_SL_vs_IND_2nd_Test_Day4_live_landscape_thumb.jpg",Sony: Day 4 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2094590/cricodi2608/TAM/std_lrh-800300010.m3u8?hdnea=exp=1787767001~acl=/*~id=67214365914149896551258173746047~hmac=f2efa36bdea07f2071245d99b4d833c55d5cc9fcc19bbf9e3def597fb890bd11
+
+#EXTINF:-1 tvg-id="1090540354_TEL" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022839/178758435726079_SL_vs_IND_2nd_Test_Day4_live_landscape_thumb.jpg",Sony: Day 4 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2105079/cricodi2608/TEL/std_lrh-800300010.m3u8?hdnea=exp=1787767001~acl=/*~id=67214365914149896551258173746047~hmac=f2efa36bdea07f2071245d99b4d833c55d5cc9fcc19bbf9e3def597fb890bd11
+
+#EXTINF:-1 tvg-id="1090540354_KAN" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022839/178758435726079_SL_vs_IND_2nd_Test_Day4_live_landscape_thumb.jpg",Sony: Day 4 - 2nd Test
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2037143/cricodi2608/KAN/std_lrh-800300010.m3u8?hdnea=exp=1787767001~acl=/*~id=67214365914149896551258173746047~hmac=f2efa36bdea07f2071245d99b4d833c55d5cc9fcc19bbf9e3def597fb890bd11
+
+#EXTINF:-1 tvg-id="1090540376_ENG" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022927/1787680519633550_JPL_Pagaria_Strikers_Maharashtra_vs_Rajasthan_Rajvansh_live_landscape_thumb.jpg",Sony: Pagariya Strikers vs Rajasthan Rajvansh
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2018458/Cricket_2608/ENG/std_lrh-800300010.m3u8?hdnea=exp=1787767001~acl=/*~id=67214365914149896551258173746047~hmac=f2efa36bdea07f2071245d99b4d833c55d5cc9fcc19bbf9e3def597fb890bd11
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7b708f4972d3506b0b881edf67d9af0b:cfb0e2b0d11d8c0a92e17b05b2a40f12
-#EXTINF:-1 tvg-id="amzn1.dv.gti.b3c5c711-83cd-4266-880d-4dac78cd1c06" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.b3c5c711-83cd-4266-880d-4dac78cd1c06/5/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: Caribbean Premier League 2026 - 16th Match - Antigua And Barbuda Falcons vs Barbados Tridents
+#KODIPROP:inputstream.adaptive.license_key=618c41c58faa9611b8add059ec2ae15d:b0ba1a6fcbcff0a1fb218be06c7401ab
+#EXTINF:-1 tvg-id="amzn1.dv.gti.669d70b3-1511-48dc-a605-fb1c6f1e1b26" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.669d70b3-1511-48dc-a605-fb1c6f1e1b26/7/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: India tour of Sri Lanka 2026 - 2nd Test - Sri Lanka vs India
 #EXTVLCOPT:http-user-agent=Denver1769
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/wrug3xcepg/out/v1/da9093fbf4674a5482d7e61b4f10eeda/cenc.mpd
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/83qkgihrvi/out/v1/35d41ffab0904f53a7adb7dfaa65c0dd/cenc.mpd
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=fa42f662c16bd9af1eda7990e41c974a:4001eddb74e4dfe64e83da23f86e94ca
-#EXTINF:-1 tvg-id="amzn1.dv.gti.57e2da55-c27b-487d-b896-00dedc67bcbb" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.57e2da55-c27b-487d-b896-00dedc67bcbb/4/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: Top End T20 Series 2026 - 16th Match - New Zealand A vs Victoria
+#KODIPROP:inputstream.adaptive.license_key=a174404bcbbe0ca29be1764b70c4edad:8468b7b3ebee090a6131f2e7f1f15c0b
+#EXTINF:-1 tvg-id="amzn1.dv.gti.a51f56fe-8144-46d7-a39f-16f0a0f69bcd" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.a51f56fe-8144-46d7-a39f-16f0a0f69bcd/3/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: Top End T20 Series 2026 - 17th Match - Hobart Hurricanes vs Adelaide Strikers Academy
 #EXTVLCOPT:http-user-agent=Denver1769
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/xenpzpruco/out/v1/2bb932944d8c47eba5f254ebaea403d3/cenc.mpd
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avheg96riw/out/v1/d91d503029554bd6a088e577519d7650/cenc.mpd
 
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
