@@ -9095,23 +9095,19 @@ https://dev.denver69.fun/Mozzz/UNITESSPORTS2/master.m3u8
 #https://port.denver69.fun/Kids/shinchan.m3u8
 #EXTM3U
 
-#EXTINF:-1 tvg-id="4248667_ENG" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248667_53052_MF_ROS_fc-Web.jpg", FC: Oman D50 2026 [English]
+#EXTINF:-1 tvg-id="4248307_ENG" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248307_53026_TKR_GUY_FC-Web.png", FC: Caribbean Premier League, 2026 [English]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248667_english_hls_015c007edb33485_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788257915~_GO=Generated~acl=/mumbai/4248667_english_hls_015c007edb33485_1ta-di_h264/*~Signature=AfPHOv2GiUmdh6qv1etrcfQGKN7nx1kCSGN4gMBGDDM4KZVzwVWDhNjBdhB5qDGLD9fgdUPvcnvhsMhr2A82ENh9wo4A
+https://in-mc-flive.fancode.com/mumbai/4248307_english_hls_b6881367be8608_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788295008~_GO=Generated~acl=/mumbai/4248307_english_hls_b6881367be8608_1ta-di_h264/*~Signature=AfPHOv0dnDKmRLmWDYwBMuITbtEJwsmIk7frt4F_surSeFaM9DtUWu3lXIbWZBmgDpTc-FYffbxtmt1KkkQnfPcNpzIO
 
-#EXTINF:-1 tvg-id="4248456_ENG" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248456_53037_NAM_ZIM_FC-WEB.jpg", FC: South Africa and Zimbabwe tour of Namibia, 2026 [English]
+#EXTINF:-1 tvg-id="4247590_ENG" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4247590_53004_BAR_RVL_FC-Web.png", FC: LALIGA 2026-27 [English]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248456_english_hls_cf444cc3c245782_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788262778~_GO=Generated~acl=/mumbai/4248456_english_hls_cf444cc3c245782_1ta-di_h264/*~Signature=AfPHOv0cV35pmILdYHe62o-mLZT2szmsXck1fcc2pAxFEg9VJIcY35zEOP6pmog7UuNf3OeMr79tHDiBW_u7NnlgsLIC
-
-#EXTINF:-1 tvg-id="1090540966_ENG" group-title="Live events" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023100/1787817348238770_JPL_26_Indore-Hawks-vs-Pune-Peshwas_live_landscape_thumb.jpg",Sony: Indore Hawks vs Pune Peshwas
-#EXTVLCOPT:http-user-agent=Denver1769
-https://sonydaimenew.akamaized.net/hls/live/2094589/Cricket_3108/ENG/std_lrh-800300010.m3u8?hdnea=exp=1788199527~acl=/*~id=79455361630643263743542108749090~hmac=6642d0d4dfbdadd77644da490504704bcc38cc0a5cc73ff2ee53f690074521dc
+https://in-mc-flive.fancode.com/mumbai/4247590_english_hls_d6008467f19922_1ta-di_h264/1080p5.m3u8?hdntl=Expires=1788289537~_GO=Generated~acl=/mumbai/4247590_english_hls_d6008467f19922_1ta-di_h264/*~Signature=AfPHOv0rxyF4YJNZ31LcQz_LgYIsXzpQmFmymoFOCCvSz9GOUkG7mcVF2tkFMrPDVsxk79mUhYJuMVdrsaxbDr1n144K
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1716bf64d899b5c00acab3bf8c052160:1f34fc403526ba214d817b4ff8493c4c
-#EXTINF:-1 tvg-id="amzn1.dv.gti.cbf8174b-2255-4e55-bddd-56fdef00143f" group-title="Live events" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.cbf8174b-2255-4e55-bddd-56fdef00143f/9/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: Pakistan tour of England 2026 - 2nd Test - England vs Pakistan
+#KODIPROP:inputstream.adaptive.license_key=7bbefbc323c7b81ac9e4873fd13d121d:b00285d9cddb97c61d9230be0f416756
+#EXTINF:-1 tvg-id="amzn1.dv.gti.d81f8e75-1d23-4525-aa48-352f35304ac3" group-title="Live events" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.d81f8e75-1d23-4525-aa48-352f35304ac3/3/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: Caribbean Premier League 2026 - 22nd Match - Trinbago Knight Riders vs Jamaica Kingsmen
 #EXTVLCOPT:http-user-agent=Denver1769
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/sqo7bfhjru/out/v1/15dfcc4d79a44a53bf9c100176d6f06a/cenc.mpd
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/aaitfpmymw/out/v1/be714b05646941cfbeb4757f750ef645/cenc.mpd
 
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
