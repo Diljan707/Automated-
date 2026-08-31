@@ -1,35 +1,13 @@
 import requests
 import re
 
-print("Starting M3U Generation...")
+print("Starting M3U Generation (Web-Page Exact Logic)...")
 
-# 1. Global tokens fetch karo (Fallback lyi)
-token_urls = [
-    "https://allinonereborn2.online/jstrweb2/cookies.json",
-    "https://allinonereborn2.online/jstrweb3/cookies.json",
-    "https://allinonereborn2.online/jstrweb4/cookies.json"
-]
-
-global_token = ""
-for url in token_urls:
-    try:
-        res = requests.get(url, timeout=5)
-        if res.status_code == 200:
-            cookie_res = res.json()
-            for item in cookie_res:
-                if isinstance(item, dict) and "cookie" in item:
-                    global_token = item["cookie"]
-                    break
-            if global_token:
-                break
-    except Exception:
-        continue
-
-# 2. Har channel da apna specific Star Sports token map karna (Dictionary vich)
+# 1. Star Sports / Dynamic cookies fetch karke dictionary banauna (channel_id -> token)
 COOKIE_STAR_SPORTS = "https://allinonereborn2.online/jtv-fetch/jstarcookie/cookie.json"
 star_tokens = {}
 try:
-    print("Fetching channel-specific dynamic tokens...")
+    print("Fetching Star Sports dynamic cookies...")
     res = requests.get(COOKIE_STAR_SPORTS, timeout=8)
     if res.status_code == 200:
         data = res.json()
@@ -43,7 +21,27 @@ try:
                     if match:
                         star_tokens[ch_id_str] = f"__hdnea__={match.group(1)}"
 except Exception as e:
-    print(f"Notice: Star Sports mapping skipped: {e}")
+    print(f"Notice: Star Sports fetch skipped: {e}")
+
+# 2. Primary & Fallback cookies fetch karna (Jithe channel da naam/ID vi ho sakda hai)
+token_urls = [
+    "https://allinonereborn2.online/jstrweb2/cookies.json",
+    "https://allinonereborn2.online/jstrweb3/cookies.json",
+    "https://allinonereborn2.online/jstrweb4/cookies.json"
+]
+
+primary_cookies = []
+for url in token_urls:
+    try:
+        res = requests.get(url, timeout=5)
+        if res.status_code == 200:
+            cookie_res = res.json()
+            if isinstance(cookie_res, list):
+                primary_cookies.extend(cookie_res)
+            elif isinstance(cookie_res, dict):
+                primary_cookies.append(cookie_res)
+    except Exception:
+        continue
 
 # 3. Base Proxy URL extraction
 base_proxy_url = "https://streamflexsmm.in/license/"
@@ -64,7 +62,7 @@ try:
 except Exception:
     pass
 
-# 4. Main channels JSON fetch te M3U creation
+# 4. Main channels JSON fetch te M3U creation (Web page wangu channel-wise token matching)
 try:
     print("Fetching channels JSON...")
     channels_res = requests.get("https://jjtvxweb.pages.dev/jstr4web.json", timeout=10)
@@ -91,9 +89,29 @@ try:
         
         has_clearkey = key_id and key_val and key_id != "null" and key_val != "null"
         
-        # Priority: Pehlan channel di apni ID wala token, je na hove taan global token
-        ch_token = star_tokens.get(ch_id) or global_token
+        # Web page jahi logic: 
+        # Pehlan check karo ki ki is channel di ID Star Sports dictionary vich hai?
+        ch_token = star_tokens.get(ch_id, "")
         
+        # Je otho na mile, taan cookies.json vichon is channel di ID ya naam match karke token labho
+        if not ch_token and primary_cookies:
+            for entry in primary_cookies:
+                # Check if entry matches channel id or name if present in cookie JSON
+                if isinstance(entry, dict):
+                    e_id = str(entry.get("channel_id", entry.get("id", "")))
+                    e_name = str(entry.get("name", "")).lower()
+                    if (e_id and e_id == ch_id) or (e_name and e_name in name.lower()):
+                        if "cookie" in entry:
+                            ch_token = entry["cookie"]
+                            break
+            
+            # Je fer vi na mile, taan koi vi general available cookie chakki lo
+            if not ch_token:
+                for entry in primary_cookies:
+                    if isinstance(entry, dict) and "cookie" in entry:
+                        ch_token = entry["cookie"]
+                        break
+
         final_url = f"{url}?{ch_token}" if ch_token and '?' not in url else f"{url}&{ch_token}" if ch_token else url
         
         m3u += f'#EXTINF:-1 tvg-id="{ch_id}" group-title="{group}" group-logo="{group_logo}" tvg-logo="{logo}",{name}\n'
