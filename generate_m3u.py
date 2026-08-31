@@ -1,80 +1,74 @@
 import requests
 import re
 
-COOKIE_STAR_SPORTS = "https://allinonereborn2.online/jtv-fetch/jstarcookie/cookie.json"
+print("Starting M3U Generation...")
+
+# 1. Global tokens fetch karo
 token_urls = [
     "https://allinonereborn2.online/jstrweb2/cookies.json",
     "https://allinonereborn2.online/jstrweb3/cookies.json",
     "https://allinonereborn2.online/jstrweb4/cookies.json"
 ]
 
-def get_channel_token(ch_id):
-    try:
-        res = requests.get(COOKIE_STAR_SPORTS, timeout=8).json()
-        if res and "failed_results" in res:
-            for item in res["failed_results"]:
-                if str(item.get("channel_id")) == str(ch_id):
-                    err_details = item.get("error_details", {})
-                    final_url = err_details.get("final_url", "")
-                    if "__hdnea__=" in final_url:
-                        match = re.search(r'__hdnea__=([^&]+)', final_url)
-                        if match:
-                            return f"__hdnea__={match.group(1)}"
-    except:
-        pass
-
-    for url in token_urls:
-        try:
-            cookie_res = requests.get(url, timeout=8).json()
-            if isinstance(cookie_res, list):
-                for item in cookie_res:
-                    if "cookie" in item:
-                        return item["cookie"]
-        except:
-            continue
-    return ""
-
-token = ""
+global_token = ""
 for url in token_urls:
     try:
-        cookie_res = requests.get(url, timeout=10).json()
-        for item in cookie_res:
-            if "cookie" in item:
-                token = item["cookie"]
+        res = requests.get(url, timeout=5)
+        if res.status_code == 200:
+            cookie_res = res.json()
+            for item in cookie_res:
+                if isinstance(item, dict) and "cookie" in item:
+                    global_token = item["cookie"]
+                    break
+            if global_token:
                 break
-        if token:
-            break
-    except:
+    except Exception:
         continue
 
-# ਟਰਗਟ URL ਤੋਂ ਸਿਰਫ਼ ਲਾਇਸੈਂਸ ਪ੍ਰੌਕਸੀ ਦਾ ਮੁੱਢਲਾ ਹਿੱਸਾ (Base Proxy URL) ਕੱਢਣਾ
-base_proxy_url = ""
+# 2. Star Sports cookies nu iko var fetch karke Dictionary vich store karo (Fast Approach)
+COOKIE_STAR_SPORTS = "https://allinonereborn2.online/jtv-fetch/jstarcookie/cookie.json"
+star_tokens = {}
+try:
+    print("Fetching Star Sports dynamic cookies...")
+    res = requests.get(COOKIE_STAR_SPORTS, timeout=8)
+    if res.status_code == 200:
+        data = res.json()
+        if data and "failed_results" in data:
+            for item in data["failed_results"]:
+                ch_id_str = str(item.get("channel_id"))
+                err_details = item.get("error_details", {})
+                final_url = err_details.get("final_url", "")
+                if "__hdnea__=" in final_url:
+                    match = re.search(r'__hdnea__=([^&]+)', final_url)
+                    if match:
+                        star_tokens[ch_id_str] = f"__hdnea__={match.group(1)}"
+except Exception as e:
+    print(f"Warning: Star Sports cookies fetch failed: {e}")
+
+# 3. Base Proxy URL extraction
+base_proxy_url = "https://streamflexsmm.in/license/"
 try:
     target_m3u_url = "https://raw.githubusercontent.com/Sflex0719/STBPLUS/main/ZioMobile.m3u"
-    res = requests.get(target_m3u_url, timeout=10)
+    res = requests.get(target_m3u_url, timeout=5)
     if res.status_code == 200:
-        lines = res.text.splitlines()
-        for line in lines:
+        for line in res.text.splitlines():
             if 'license_key=' in line:
                 l_key = line.split('license_key=')[1].strip()
                 if l_key and l_key != "null:null":
-                    # ਜੇ ਲਿੰਕ ਵਿੱਚ ਅਖ਼ੀਰ ਵਿੱਚ ਕੋਈ ਨੰਬਰ/ID ਲੱਗੀ ਹੈ, ਉਸਨੂੰ ਹਟਾ ਕੇ ਬੇਸ URL ਬਣਾਉਣਾ
                     match = re.search(r'(https?://[^\s]+?/)(?:\d+/)?$', l_key)
-                    if not match:
-                        match_num = re.sub(r'\d+/?$', '', l_key)
-                        base_proxy_url = match_num
-                    else:
+                    if match:
                         base_proxy_url = match.group(1)
+                    else:
+                        base_proxy_url = re.sub(r'\d+/?$', '', l_key)
                     break
-except Exception as e:
-    print(f"Warning: Could not fetch base proxy: {e}")
+except Exception:
+    pass
 
-# ਜੇ ਬੇਸ ਪ੍ਰੌਕਸੀ ਨਾ ਮਿਲੇ ਤਾਂ ਡਿਫਾਲਟ
-if not base_proxy_url:
-    base_proxy_url = "https://streamflexsmm.in/license/"
-
+# 4. Main channels JSON fetch te M3U creation
 try:
-    channels = requests.get("https://jjtvxweb.pages.dev/jstr4web.json", timeout=10).json()
+    print("Fetching channels JSON...")
+    channels_res = requests.get("https://jjtvxweb.pages.dev/jstr4web.json", timeout=10)
+    channels = channels_res.json()
     
     m3u = '#EXTM3U\n'
     count = 0
@@ -87,7 +81,6 @@ try:
         group = f"JioTV+ ▶ | {category}"
         group_logo = "https://i.postimg.cc/52qG6sKt/STREAMXi.png"
         
-        # ਤੁਹਾਡੀ ਆਪਣੀ ਪਲੇਲਿਸਟ ਵਾਲੀ ਚੈਨਲ ID
         ch_id = str(ch.get('id', ''))
         
         if not url:
@@ -98,8 +91,8 @@ try:
         
         has_clearkey = key_id and key_val and key_id != "null" and key_val != "null"
         
-        # Har channel da apna dynamic token ya fallback global token
-        ch_token = get_channel_token(ch_id) or token
+        # Pehlan Star Sports dictionary cho check karo, nahi te global token use karo
+        ch_token = star_tokens.get(ch_id, global_token)
         
         final_url = f"{url}?{ch_token}" if ch_token and '?' not in url else f"{url}&{ch_token}" if ch_token else url
         
@@ -110,7 +103,6 @@ try:
             m3u += f'#KODIPROP:inputstream.adaptive.license_type=clearkey\n'
             m3u += f'#KODIPROP:inputstream.adaptive.license_key={license_key}\n'
         else:
-            # ਜਿੱਥੇ ਕਲੀਅਰ ਕੀ null ਹੈ, ਉੱਥੇ ਬੇਸ ਪ੍ਰੌਕਸੀ ਦੇ ਨਾਲ ਇਸ ਚੈਨਲ ਦੀ ਆਪਣੀ ID ਲੱਗ ਜਾਵੇਗੀ
             custom_license_proxy = f"{base_proxy_url}{ch_id}/"
             m3u += f'#KODIPROP:inputstream.adaptive.license_type=clearkey\n'
             m3u += f'#KODIPROP:inputstream.adaptive.license_key={custom_license_proxy}\n'
@@ -129,6 +121,7 @@ try:
         f.write(m3u)
         
     print(f"Success! Generated {count} channels in {filename}.")
+
 except Exception as e:
-    print(f"Error: {e}")
-                            
+    print(f"Error occurred: {e}")
+        
