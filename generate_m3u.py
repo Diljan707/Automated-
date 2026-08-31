@@ -3,47 +3,47 @@ import re
 
 print("Starting M3U Generation...")
 
-# 1. Global tokens fetch karo
-token_urls = [
-    "https://allinonereborn2.online/jstrweb2/cookies.json",
-    "https://allinonereborn2.online/jstrweb3/cookies.json",
-    "https://allinonereborn2.online/jstrweb4/cookies.json"
-]
-
-global_token = ""
-for url in token_urls:
-    try:
-        res = requests.get(url, timeout=5)
-        if res.status_code == 200:
-            cookie_res = res.json()
-            for item in cookie_res:
-                if isinstance(item, dict) and "cookie" in item:
-                    global_token = item["cookie"]
-                    break
-            if global_token:
-                break
-    except Exception:
-        continue
-
-# 2. Star Sports cookies nu iko var fetch karke Dictionary vich store karo (Fast Approach)
+# 1. Asli Star Sports cookie URL ton dynamic cookie fetch karna (Jaise web player karda hai)
 COOKIE_STAR_SPORTS = "https://allinonereborn2.online/jtv-fetch/jstarcookie/cookie.json"
-star_tokens = {}
+dynamic_cookie = ""
+
 try:
-    print("Fetching Star Sports dynamic cookies...")
+    print("Fetching live dynamic cookie...")
     res = requests.get(COOKIE_STAR_SPORTS, timeout=8)
     if res.status_code == 200:
         data = res.json()
         if data and "failed_results" in data:
             for item in data["failed_results"]:
-                ch_id_str = str(item.get("channel_id"))
                 err_details = item.get("error_details", {})
                 final_url = err_details.get("final_url", "")
                 if "__hdnea__=" in final_url:
                     match = re.search(r'__hdnea__=([^&]+)', final_url)
                     if match:
-                        star_tokens[ch_id_str] = f"__hdnea__={match.group(1)}"
+                        dynamic_cookie = f"__hdnea__={match.group(1)}"
+                        break
 except Exception as e:
-    print(f"Warning: Star Sports cookies fetch failed: {e}")
+    print(f"Notice: Dynamic cookie fetch failed: {e}")
+
+# 2. Je dynamic cookie na mile, taan fallback cookies try karo
+if not dynamic_cookie:
+    token_urls = [
+        "https://allinonereborn2.online/jstrweb2/cookies.json",
+        "https://allinonereborn2.online/jstrweb3/cookies.json",
+        "https://allinonereborn2.online/jstrweb4/cookies.json"
+    ]
+    for url in token_urls:
+        try:
+            res = requests.get(url, timeout=5)
+            if res.status_code == 200:
+                cookie_res = res.json()
+                for item in cookie_res:
+                    if isinstance(item, dict) and "cookie" in item:
+                        dynamic_cookie = item["cookie"]
+                        break
+                if dynamic_cookie:
+                    break
+        except Exception:
+            continue
 
 # 3. Base Proxy URL extraction
 base_proxy_url = "https://streamflexsmm.in/license/"
@@ -91,10 +91,8 @@ try:
         
         has_clearkey = key_id and key_val and key_id != "null" and key_val != "null"
         
-        # Pehlan Star Sports dictionary cho check karo, nahi te global token use karo
-        ch_token = star_tokens.get(ch_id, global_token)
-        
-        final_url = f"{url}?{ch_token}" if ch_token and '?' not in url else f"{url}&{ch_token}" if ch_token else url
+        # Stream URL de nal dynamic cookie attach karna
+        final_url = f"{url}?{dynamic_cookie}" if dynamic_cookie and '?' not in url else f"{url}&{dynamic_cookie}" if dynamic_cookie else url
         
         m3u += f'#EXTINF:-1 tvg-id="{ch_id}" group-title="{group}" group-logo="{group_logo}" tvg-logo="{logo}",{name}\n'
         
@@ -108,8 +106,8 @@ try:
             m3u += f'#KODIPROP:inputstream.adaptive.license_key={custom_license_proxy}\n'
             
         m3u += f'#EXTVLCOPT:http-user-agent=plaYtv/7.1.5\n'
-        if ch_token:
-            m3u += f'#EXTHTTP:{{"cookie":"{ch_token}","Origin":"https://www.jiotv.com/","Referer":"https://www.jiotv.com/"}}\n'
+        if dynamic_cookie:
+            m3u += f'#EXTHTTP:{{"cookie":"{dynamic_cookie}","Origin":"https://www.jiotv.com/","Referer":"https://www.jiotv.com/"}}\n'
         else:
             m3u += f'#EXTHTTP:{{"Origin":"https://www.jiotv.com/","Referer":"https://www.jiotv.com/"}}\n'
             
@@ -124,4 +122,3 @@ try:
 
 except Exception as e:
     print(f"Error occurred: {e}")
-        
