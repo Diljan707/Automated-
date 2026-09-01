@@ -1,9 +1,9 @@
 import requests
 import re
 
-print("Starting M3U Generation (Web-Page Exact Logic)...")
+print("Starting M3U Generation with Web-Page Logic...")
 
-# 1. Star Sports / Dynamic cookies fetch karke dictionary banauna (channel_id -> token)
+# 1. Star Sports dynamic cookies nu ID-wise dictionary vich store karo (Jaise web page karda hai)
 COOKIE_STAR_SPORTS = "https://allinonereborn2.online/jtv-fetch/jstarcookie/cookie.json"
 star_tokens = {}
 try:
@@ -23,23 +23,25 @@ try:
 except Exception as e:
     print(f"Notice: Star Sports fetch skipped: {e}")
 
-# 2. Primary & Fallback cookies fetch karna (Jithe channel da naam/ID vi ho sakda hai)
+# 2. Global / Primary cookies fetch karo (Fallback lyi)
 token_urls = [
     "https://allinonereborn2.online/jstrweb2/cookies.json",
     "https://allinonereborn2.online/jstrweb3/cookies.json",
     "https://allinonereborn2.online/jstrweb4/cookies.json"
 ]
 
-primary_cookies = []
+global_token = ""
 for url in token_urls:
     try:
         res = requests.get(url, timeout=5)
         if res.status_code == 200:
             cookie_res = res.json()
-            if isinstance(cookie_res, list):
-                primary_cookies.extend(cookie_res)
-            elif isinstance(cookie_res, dict):
-                primary_cookies.append(cookie_res)
+            for item in cookie_res:
+                if isinstance(item, dict) and "cookie" in item:
+                    global_token = item["cookie"]
+                    break
+            if global_token:
+                break
     except Exception:
         continue
 
@@ -62,7 +64,7 @@ try:
 except Exception:
     pass
 
-# 4. Main channels JSON fetch te M3U creation (Web page wangu channel-wise token matching)
+# 4. Main channels JSON fetch te M3U creation
 try:
     print("Fetching channels JSON...")
     channels_res = requests.get("https://jjtvxweb.pages.dev/jstr4web.json", timeout=10)
@@ -89,29 +91,9 @@ try:
         
         has_clearkey = key_id and key_val and key_id != "null" and key_val != "null"
         
-        # Web page jahi logic: 
-        # Pehlan check karo ki ki is channel di ID Star Sports dictionary vich hai?
-        ch_token = star_tokens.get(ch_id, "")
+        # Web page wangu priority: 1. Star Sports ID-specific token, 2. Global token
+        ch_token = star_tokens.get(ch_id) or global_token
         
-        # Je otho na mile, taan cookies.json vichon is channel di ID ya naam match karke token labho
-        if not ch_token and primary_cookies:
-            for entry in primary_cookies:
-                # Check if entry matches channel id or name if present in cookie JSON
-                if isinstance(entry, dict):
-                    e_id = str(entry.get("channel_id", entry.get("id", "")))
-                    e_name = str(entry.get("name", "")).lower()
-                    if (e_id and e_id == ch_id) or (e_name and e_name in name.lower()):
-                        if "cookie" in entry:
-                            ch_token = entry["cookie"]
-                            break
-            
-            # Je fer vi na mile, taan koi vi general available cookie chakki lo
-            if not ch_token:
-                for entry in primary_cookies:
-                    if isinstance(entry, dict) and "cookie" in entry:
-                        ch_token = entry["cookie"]
-                        break
-
         final_url = f"{url}?{ch_token}" if ch_token and '?' not in url else f"{url}&{ch_token}" if ch_token else url
         
         m3u += f'#EXTINF:-1 tvg-id="{ch_id}" group-title="{group}" group-logo="{group_logo}" tvg-logo="{logo}",{name}\n'
