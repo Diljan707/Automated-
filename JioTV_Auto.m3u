@@ -542,8 +542,8 @@ https://jiotvmblive.cdn.jio.com/bpk-tv/Sony_SAB_MOB/WDVLive/index.mpd?__hdnea__=
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=88295124db295a6b9f5027dc6049e294:641c40230a95cb76d1949125f9552fda
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.5
-#EXTHTTP:{"cookie":"__hdnea__=st=1788225741~exp=1788229341~acl=/bpk-tv/AndTVHD_BTS/WDVLive/*~hmac=f6b442dd8a24a13964c94b76db4dba1b6de68c0992a0b1af3e5947401c0a4887","Origin":"https://www.jiotv.com/","Referer":"https://www.jiotv.com/"}
-https://jiotvpllive.cdn.jio.com/bpk-tv/AndTVHD_BTS/WDVLive/index.mpd?__hdnea__=st=1788225741~exp=1788229341~acl=/bpk-tv/AndTVHD_BTS/WDVLive/*~hmac=f6b442dd8a24a13964c94b76db4dba1b6de68c0992a0b1af3e5947401c0a4887
+#EXTHTTP:{"cookie":"__hdnea__=st=1788229288~exp=1788232888~acl=/bpk-tv/AndTVHD_BTS/WDVLive/*~hmac=5cf478631d5bf6fd2fbac8a1898f045fd625a56d248ff0a5559d0d88a87435ac","Origin":"https://www.jiotv.com/","Referer":"https://www.jiotv.com/"}
+https://jiotvpllive.cdn.jio.com/bpk-tv/AndTVHD_BTS/WDVLive/index.mpd?__hdnea__=st=1788229288~exp=1788232888~acl=/bpk-tv/AndTVHD_BTS/WDVLive/*~hmac=5cf478631d5bf6fd2fbac8a1898f045fd625a56d248ff0a5559d0d88a87435ac
 
 #EXTINF:-1 tvg-id="473" group-title="JioTV+ ▶ | Entertainment" group-logo="https://i.postimg.cc/52qG6sKt/STREAMXi.png" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/ZeeAnmol.png",Anmol TV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -4588,8 +4588,8 @@ https://jiotvmblive.cdn.jio.com/bpk-tv/Rongeen_TV_MOB/WDVLive/index.mpd?__hdnea_
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=67e52f4bdcfc525898be0446feb7f185:8cf5c24b168105bca24b358eb05f6df4
 #EXTVLCOPT:http-user-agent=plaYtv/7.1.5
-#EXTHTTP:{"cookie":"__hdnea__=st=1788225759~exp=1788229359~acl=/bpk-tv/AndXploreHD_BTS/WDVLive/*~hmac=aeb39f48828b2f7a7e2b07f1a167aaf26c2327b26c79f53faa6f89a3f905caf1","Origin":"https://www.jiotv.com/","Referer":"https://www.jiotv.com/"}
-https://jiotvpllive.cdn.jio.com/bpk-tv/AndXploreHD_BTS/WDVLive/index.mpd?__hdnea__=st=1788225759~exp=1788229359~acl=/bpk-tv/AndXploreHD_BTS/WDVLive/*~hmac=aeb39f48828b2f7a7e2b07f1a167aaf26c2327b26c79f53faa6f89a3f905caf1
+#EXTHTTP:{"cookie":"__hdnea__=st=1788229306~exp=1788232906~acl=/bpk-tv/AndXploreHD_BTS/WDVLive/*~hmac=4ed5d318fd923353c2fd9e6b805adae966ccdd98f64b3a3e6b8cbb632fb59744","Origin":"https://www.jiotv.com/","Referer":"https://www.jiotv.com/"}
+https://jiotvpllive.cdn.jio.com/bpk-tv/AndXploreHD_BTS/WDVLive/index.mpd?__hdnea__=st=1788229306~exp=1788232906~acl=/bpk-tv/AndXploreHD_BTS/WDVLive/*~hmac=4ed5d318fd923353c2fd9e6b805adae966ccdd98f64b3a3e6b8cbb632fb59744
 
 #EXTINF:-1 tvg-id="1669" group-title="JioTV+ ▶ | Bengali" group-logo="https://i.postimg.cc/52qG6sKt/STREAMXi.png" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Bangla.png",Sun Bangla
 #KODIPROP:inputstream.adaptive.license_type=clearkey
