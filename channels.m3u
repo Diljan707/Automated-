@@ -9095,23 +9095,33 @@ https://dev.denver69.fun/Mozzz/UNITESSPORTS2/master.m3u8
 #https://port.denver69.fun/Kids/shinchan.m3u8
 #EXTM3U
 
-#EXTINF:-1 tvg-id="4248613_ENG" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ACC-Mens-Premier_Web-match-card.png", FC: ACC Men’s Premier Cup 2026 [English]
+#EXTINF:-1 tvg-id="4248359_HIN" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248359_53029_MER_KAS_FC-Web_1786702852105.png", FC: Uttar Pradesh T20 League, 2026 [Hindi]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248613_english_hls_51e2b4ee4249460_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788311992~_GO=Generated~acl=/mumbai/4248613_english_hls_51e2b4ee4249460_1ta-di_h264/*~Signature=AfPHOv2xC2DqRRwxreYC4rWfeNGATPD6uZlgKOqg1rM-e-WCnnEpMVGoLpLkZxvKRE3dsfQqFCwzTYT_fA6jWP51_U4P
+https://in-mc-flive.fancode.com/mumbai/4248359_hindi_hls_b9ede3fe0826465_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788340562~_GO=Generated~acl=/mumbai/4248359_hindi_hls_b9ede3fe0826465_1ta-di_h264/*~Signature=AfPHOv38ERKsZJykjdiqzce256AQtd4CTK6nZLgNGEq_yTtAk0KD5k9QLNkOi2yreVza6rvf29mAcRy_3nijTw8qDC0M
 
-#EXTINF:-1 tvg-id="4248614_ENG" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ACC-Mens-Premier_Web-match-card.png", FC: ACC Men’s Premier Cup 2026 [English]
+#EXTINF:-1 tvg-id="4248359_BHO" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248359_53029_MER_KAS_FC-Web_1786702852105.png", FC: Uttar Pradesh T20 League, 2026 [Bhojpuri]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248614_english_hls_2fac21ae5165994_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788311385~_GO=Generated~acl=/mumbai/4248614_english_hls_2fac21ae5165994_1ta-di_h264/*~Signature=AfPHOv0pOUdw8fUq8ba9JtkzDCV0ued6KHu-IuvHoeP8JmCMPsx5tx1_rtnzcwIcQpOf7r2--11GIBjMdjVKXrTyqRcD
+https://in-mc-flive.fancode.com/mumbai/4248359_bhojpuri_hls_051952171d1604_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788340563~_GO=Generated~acl=/mumbai/4248359_bhojpuri_hls_051952171d1604_1ta-di_h264/*~Signature=AfPHOv1AGn5Uvp37Rd4gCOr67kK-SxiBd8BccwMGwJB0PGLqn3Ip-HYc3-T2Z5_MBjCXrO9ncfTESNd5hFPWYmdNW7sH
 
-#EXTINF:-1 tvg-id="4248307_ENG" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248307_53026_TKR_GUY_FC-Web.png", FC: Caribbean Premier League, 2026 [English]
+#EXTINF:-1 tvg-id="4248668_ENG" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248668_53052_IAI_YSG_fc-Web.jpg", FC: Oman D50 2026 [English]
 #EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
-https://in-mc-flive.fancode.com/mumbai/4248307_english_hls_b6881367be8608_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788295008~_GO=Generated~acl=/mumbai/4248307_english_hls_b6881367be8608_1ta-di_h264/*~Signature=AfPHOv0dnDKmRLmWDYwBMuITbtEJwsmIk7frt4F_surSeFaM9DtUWu3lXIbWZBmgDpTc-FYffbxtmt1KkkQnfPcNpzIO
+https://in-mc-flive.fancode.com/mumbai/4248668_english_hls_5cee8423d132663_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788344226~_GO=Generated~acl=/mumbai/4248668_english_hls_5cee8423d132663_1ta-di_h264/*~Signature=AfPHOv0ZABTRpZNMGQcgO3zZQgDBNzZbpvMTAp8RxZ8NoCaFLZ65nI9MqoQCJTobJ40BEOmiaAWyzf-2bDh6awJPdjcO
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7bbefbc323c7b81ac9e4873fd13d121d:b00285d9cddb97c61d9230be0f416756
-#EXTINF:-1 tvg-id="amzn1.dv.gti.d81f8e75-1d23-4525-aa48-352f35304ac3" group-title="Live events" tvg-logo="https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.d81f8e75-1d23-4525-aa48-352f35304ac3/3/BOXART-16X9/en-US._UR1920,1080_.jpeg", Willow: Caribbean Premier League 2026 - 22nd Match - Trinbago Knight Riders vs Jamaica Kingsmen
+#EXTINF:-1 tvg-id="4247561_ENG" group-title="Live events" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4247561_53003_NDS-W_SDS-W_FC-Web_1787555684584.png", FC: Women's Delhi Premier League, 2026 [English]
+#EXTVLCOPT:http-user-agent=ReactNativeVideo/9.7.0 (Linux;Android 10) AndroidXMedia3/1.6.1
+https://in-mc-flive.fancode.com/mumbai/4247561_english_hls_f309f408eb22217_1ta-di_h264/1080p.m3u8?hdntl=Expires=1788335072~_GO=Generated~acl=/mumbai/4247561_english_hls_f309f408eb22217_1ta-di_h264/*~Signature=AfPHOv1jk_yfOgruRUNEIUvFmzVbsrMrc5wDU0A-PJ_kzx21RsApxbFZz2z_GWV3zkTc2ff9H3USSyeW1U51JvOzjRED
+
+#EXTINF:-1 tvg-id="1090541059_HIN" group-title="Live events" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023238/1788172141615658_PunjabT20_League26_Bathinda_Royals_vs_Ludhiana_Lions_landscape_thumb.jpg",Sony: Bathinda Royals vs Ludhiana Lions
 #EXTVLCOPT:http-user-agent=Denver1769
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/aaitfpmymw/out/v1/be714b05646941cfbeb4757f750ef645/cenc.mpd
+https://sonydaimenew.akamaized.net/hls/live/2094588/Criclive0109/HIN/std_lrh-800300010.m3u8?hdnea=exp=1788290041~acl=/*~id=75321507948321637472164368929333~hmac=3dbb00569ff499122b03efbf26976b80df880680660330d6db3d3d5b117c98bb
+
+#EXTINF:-1 tvg-id="1090541059_PAN" group-title="Live events" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023238/1788172141615658_PunjabT20_League26_Bathinda_Royals_vs_Ludhiana_Lions_landscape_thumb.jpg",Sony: Bathinda Royals vs Ludhiana Lions
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2094588/Criclive0109/PAN/std_lrh-800300010.m3u8?hdnea=exp=1788290041~acl=/*~id=75321507948321637472164368929333~hmac=3dbb00569ff499122b03efbf26976b80df880680660330d6db3d3d5b117c98bb
+
+#EXTINF:-1 tvg-id="1090541057_ENG" group-title="Live events" tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023295/1788245765949942_JPL_26_Golden-Eagles-Delhi-vs-Royals-Hyderabad_live_landscape_thumb.jpg",Sony: Golden Eagles Delhi vs Royals Hyderabad
+#EXTVLCOPT:http-user-agent=Denver1769
+https://sonydaimenew.akamaized.net/hls/live/2005444/Criclive0109/ENG/std_lrh-800300010.m3u8?hdnea=exp=1788290041~acl=/*~id=75321507948321637472164368929333~hmac=3dbb00569ff499122b03efbf26976b80df880680660330d6db3d3d5b117c98bb
 
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
