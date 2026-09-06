@@ -1,4 +1,3 @@
-cat << 'EOF' > smart_hybrid_fetcher.py
 import requests
 import re
 from bs4 import BeautifulSoup
@@ -99,6 +98,3 @@ try:
 
 except Exception as e:
     print("ਪ੍ਰੋਸੈਸਿੰਗ ਐਰਰ:", e)
-EOF
-python3 smart_hybrid_fetcher.py
-      
