@@ -1,0 +1,6 @@
+#EXTM3U
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"base64": {"keys": [{"kty": "oct", "k": "NQwKr_7fUcwVAulUPHyIXg", "kid": "jqm2B1SSUgaOJgpfTX3TIQ"}, {"kty": "oct", "k": "hirwF0K8samTDVPB5-KZFQ", "kid": "jY2Vn670to2wYphlfalijw"}, {"kty": "oct", "k": "2I0Y5Yoyreu2OljCmICRZw", "kid": "T2ZFwrSxDPZaPMiQBMsNnQ"}, {"kty": "oct", "k": "F1bAai5-6B_oZV9jd_JgAQ", "kid": "dGJO61OWTjpiZVd889b7aQ"}, {"kty": "oct", "k": "dGb-EcGrYIMdi2CtsFCjSg", "kid": "W2PWDsSZpX0wuViqc9jAhg"}], "type": "temporary"}, "expire": 1788792775}
+#EXTINF:-1 tvg-id="362" tvg-logo="https://img.media.jio.com/tvpimages/13/81/302112_1749665154709_l_medium.jpg" CATCH-UP-FAILED="null" group-title="Sports",Star Sports 1 Hindi
+#EXTVLCOPT:http-user-agent=Denver1769
+https://jiotvpllive.cdn.jio.com/bpk-tv/Star_Sports_1_Hindi_BTS/WDVLive/index.mpd?__hdnea__=st=1788784679~exp=1788806279~acl=/bpk-tv/Star_Sports_1_Hindi_BTS/WDVLive/*~hmac=ece9e5542454f73272e9809ab79387a443c6c5cece2e37df3d9411c27e482609
