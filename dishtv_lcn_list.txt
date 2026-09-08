@@ -1,3 +1,4 @@
+0: India News
 100: Star Plus HD
 101: Star Plus
 102: Zee TV HD
@@ -752,10 +753,9 @@
 4004: NORTH EAST LIVE
 4005: Star Utsav Movies
 4006: India Daily Live
-4017: K News India
-4021: India News
+4014: Manoranjan Movies
 4022: Goldmines
-4029: Manoranjan Movies
+4025: K News India
 4043: Republic TV
 4064: R. Bangla
 4065: Living India News
