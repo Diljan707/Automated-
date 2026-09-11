@@ -489,7 +489,6 @@
 1533: News18 Assam North East
 1535: News Live
 1537: Nepal One
-1540: NB News
 1554: Bhojpuri Cinema
 1555: ZEE BIOSKOPE
 1556: EPIC bhojpuri
