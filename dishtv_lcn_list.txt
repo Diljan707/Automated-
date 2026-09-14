@@ -202,6 +202,7 @@
 707: Zee UP Uttrakhand
 709: News State UP/UK
 711: News18 Uttar Pradesh/Uttarakhand
+712: News Leader
 713: News India 24x7
 715: Zee MP Chattisgarh
 717: News18 Madhya Pradesh/Chhattisgarh
