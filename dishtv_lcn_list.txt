@@ -332,7 +332,6 @@
 1081: Sant Wani
 1083: Shraddha MH One
 1087: Peace of Mind
-1092: Shree Disha Bhakti
 1094: Sai Leela
 1101: Hungama tv
 1102: Nick HD+
@@ -379,7 +378,6 @@
 1209: Satsang
 1211: Sony Marathi
 1212: Shemaroo Marathibana
-1213: Sadhna TV
 1214: Sun Marathi
 1216: Sai Leela
 1217: Aadinath
@@ -457,7 +455,6 @@
 1458: Star Pravah HD
 1459: Star Pravah
 1461: Zee Yuva
-1463: Fakt Marathi
 1465: Sony Marathi
 1467: Sun Marathi
 1471: Kolkata TV
@@ -749,13 +746,13 @@
 3235: Powervision
 3237: Harvest TV
 3999: Teleshopping 1
+4001: K News India
 4002: Skyama Daily Post News
 4004: NORTH EAST LIVE
 4005: Star Utsav Movies
 4006: India Daily Live
-4014: Manoranjan Movies
 4022: Goldmines
-4025: K News India
+4027: Manoranjan Movies
 4043: Republic TV
 4064: R. Bangla
 4065: Living India News
