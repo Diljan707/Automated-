@@ -1,4 +1,4 @@
-0: India News
+0: Watcho
 100: Star Plus HD
 101: Star Plus
 102: Zee TV HD
@@ -53,7 +53,6 @@
 304: &pictures HD
 305: &Pictures
 307: Zee Bollywood
-308: Watcho
 310: SONY MAX HD
 311: SONY MAX
 312: Colors Cineplex HD
@@ -70,7 +69,6 @@
 338: Star Gold
 339: Zee Cinema HD
 340: Zee Cinema
-341: Watcho
 342: SONY MAX HD
 343: SONY MAX
 349: SONY MAX 2
@@ -80,11 +78,9 @@
 355: Anmol Cinema
 357: Star Gold Romance
 358: Star Gold Thrills
-359: Goldmines
 360: Star Gold Select HD
 361: Star Gold Select
 363: Star Utsav Movies
-365: Shemaroo Josh
 369: Anmol Cinema
 371: Anmol Cinema 2
 373: SONY MAX 2
@@ -93,7 +89,6 @@
 381: Star Gold Select HD
 382: Star Gold Select
 411: B4U Kadak
-414: Shemaroo Josh
 416: Sony Max 1
 420: Big Magic
 451: Zing
@@ -178,7 +173,6 @@
 659: SONY SPORTS TEN 5
 660: Star Sports Select HD1
 661: Star Sports Select 1
-662: India Daily 24x7
 663: News18 India
 665: Star Sports 3
 666: Times Now Navbharat
@@ -220,7 +214,6 @@
 739: ABP news
 741: Republic Bharat
 743: News 24
-745: India Daily 24x7
 747: India tv
 749: Times Now Navbharat
 751: Sudarshan TV
@@ -246,7 +239,6 @@
 779: DD URDU
 781: News18 Delhi NCR/J&K
 783: DD KASHIR
-785: CGTN
 787: Al jazeera
 790: France 24
 792: Russia Today
@@ -392,7 +384,6 @@
 1243: 9X Jhakaas
 1251: Zee 24 Taas
 1253: ABP Majha
-1254: NAMMA Homeopathy
 1255: News18 Marathi
 1257: NDTV Marathi
 1259: TV9 MARATHI
@@ -698,7 +689,6 @@
 2979: Velicham TV
 2981: News Tamil 24x7
 2991: D Tamil
-2993: Kalvi Tholaikkatchi
 3001: Chutti Tv
 3013: Nambikkkai
 3015: Sai TV
@@ -745,13 +735,11 @@
 3233: Goodness TV 
 3235: Powervision
 3237: Harvest TV
-3999: Teleshopping 1
 4001: K News India
 4002: Skyama Daily Post News
 4004: NORTH EAST LIVE
 4005: Star Utsav Movies
 4006: India Daily Live
-4022: Goldmines
 4027: Manoranjan Movies
 4043: Republic TV
 4064: R. Bangla
