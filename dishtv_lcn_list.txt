@@ -252,7 +252,7 @@
 814: Discovery Turbo
 817: News18 Uttar Pradesh/Uttarakhand
 819: Zee UP Uttrakhand
-820: History TV 18
+820: News Leader
 822: Nat Geo Wild HD
 823: Zee Bihar Jharkhand
 825: News18 Bihar/Jharkhand
