@@ -126,12 +126,12 @@
 576: MN+ HD
 577: Star Movies Select HD
 578: STAR MOVIES SELECT 
-602: Star Sports 1 HD
-603: Star Sports 1
-604: Star Sports 2 HD
-605: Star Sports 2
-606: Star Sports 1 HD Hindi
-607: Star Sports 1 Hindi
+602: Star Sports 1 HD Hindi
+603: Star Sports 1 Hindi
+604: Star Sports 2 Hindi HD
+605: Star Sports 2 Hindi
+606: Star Sports 1 HD
+607: Star Sports 1
 610: SONY SPORTS TEN 1 HD
 611: SONY SPORTS TEN 1
 612: SONY SPORTS TEN 2 HD
