@@ -1,22 +1,8 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023534/1788617523847612_UNL26_Portugal_vs_Wales_live_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543937_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023535/1788618296586899_UNL26_Netherlands_vs_Germany_live_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543938_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024408/1790022726639512_ENGvsSL26_2odi_landscape_thumb.jpg" group-title="Cricket",Sri Lanka Tour of England 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543916_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023552/1788629830077120_UNL26_Norway_vs_Denmark_live_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543944_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023537/178862115308953_UNL26_Serbia_vs_Greece_live_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543943_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023553/1788630525483440_UNL26_Austria_vs_Israel_live_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543947_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023559/178863630759699_UNL26_Kosovo_vs_Republic_of_Ireland_live_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543948_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023560/1788637005172990_UNL26_Liechtenstein_vs_Lithuania_live_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543949_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024583/1790188903565263_FIFA_international_friendlies_india_vs_panama_dated_rev_landscape_thumb.jpg" group-title="Football",Upcoming - India vs Panama - India's International Friendlies
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024581/1790188286269439_FIFA_international_friendlies_india_vs_panama_today_rev_landscape_thumb.jpg" group-title="Football",Upcoming - India vs Panama - India's International Friendlies
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543448
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024700/1790280780158403_Laver_cup26_day1_today_promo_landscape_thumb.jpg" group-title="Tennis",Upcoming - Laver Cup 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090544292
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024191/1789810621694132_AWC_IND_vs_PAK_Promo_landscape_thumb.jpg" group-title="Sports",Upcoming - 20th Asian Games Aichi-Nagoya 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090539555
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024578/1790187144920418_FIFA_international_friendlies_india_vs_brazil_dated_rev_landscape_thumb.jpg" group-title="Football",Upcoming - India vs Brazil - India's International Friendlies 
@@ -43,5 +29,3 @@ https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543806
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543810
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024511/1790119270730848_indvsbrazil_promo3_landscape_thumb.jpg" group-title="Football",Upcoming - India vs Brazil - India's International Friendlies 
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543811
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024580/1790187597972785_india_vs_brazil_promo3_landscape_thumb.jpg" group-title="Football",Upcoming - India's International Friendlies 
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090543731
