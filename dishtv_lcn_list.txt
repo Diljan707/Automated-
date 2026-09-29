@@ -739,8 +739,8 @@
 4004: NORTH EAST LIVE
 4005: Star Utsav Movies
 4006: India Daily Live
-4011: Manoranjan Movies
-4017: K News India
+4010: K News India
+4027: Manoranjan Movies
 4043: Republic TV
 4064: R. Bangla
 4065: Living India News
