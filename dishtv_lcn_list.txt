@@ -370,6 +370,7 @@
 1209: Satsang
 1211: Sony Marathi
 1212: Shemaroo Marathibana
+1213: Fakt Marathi
 1214: Sun Marathi
 1216: Sai Leela
 1217: Aadinath
@@ -446,6 +447,7 @@
 1458: Star Pravah HD
 1459: Star Pravah
 1461: Zee Yuva
+1463: Fakt Marathi
 1465: Sony Marathi
 1467: Sun Marathi
 1471: Kolkata TV
