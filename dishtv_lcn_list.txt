@@ -356,7 +356,6 @@
 1191: PTC News
 1193: News18 Punjab Haryana Himachal
 1194: India News Haryana
-1195: PTC SIMRAN
 1196: News State Punjab Haryana Himachal
 1197: Khabrain Abhi Tak
 1200: Pratham News
@@ -741,9 +740,9 @@
 4004: NORTH EAST LIVE
 4005: Star Utsav Movies
 4006: India Daily Live
-4010: K News India
-4027: Manoranjan Movies
+4026: K News India
 4043: Republic TV
 4064: R. Bangla
 4065: Living India News
 4066: Bharat Express
+4070: PTC SIMRAN
