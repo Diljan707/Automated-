@@ -321,7 +321,6 @@
 1067: Sanskar
 1077: Aastha
 1079: Shubh TV
-1081: Sant Wani
 1083: Shraddha MH One
 1087: Peace of Mind
 1094: Sai Leela
@@ -450,7 +449,6 @@
 1465: Sony Marathi
 1467: Sun Marathi
 1471: Kolkata TV
-1473: News Time
 1475: 24 Ghanta TV
 1477: ABP Ananda
 1479: News18 Bangla
@@ -536,7 +534,6 @@
 1869: 24 Ghanta TV
 1871: Kolkata TV
 1873: R. Bangla
-1875: News Time
 1877: News18 Bangla
 1883: Calcutta News
 1957: Rang
