@@ -645,7 +645,7 @@
 2867: Jaya TV
 2868: Vijay Super HD
 2869: Vijay Super
-2873: Polimer TV
+2874: Polimer TV
 2875: Sirippoli
 2877: Vasanth TV
 2878: Colors Tamil HD
