@@ -1,6 +1,18 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026055/1791532974297721_ISL_Bengaluru_vs_SportingClub_Delhi_today_landscape_Thum.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547508
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026083/1791560288594403_ISL_Goa_vs_chennai_landscape_Thum.jpg" group-title="Football",MG Indian Super League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547647_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026083/1791560288594403_ISL_Goa_vs_chennai_landscape_Thum.jpg" group-title="Football",MG Indian Super League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547647_HIN
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026083/1791560288594403_ISL_Goa_vs_chennai_landscape_Thum.jpg" group-title="Football",MG Indian Super League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547647_TAM
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025989/1791373944150475_VCL_Rajasthan-Spikers-vs-Ayodhya-Garjan_live_landscape_thumb.jpg" group-title="Volleyball",Volleyball Championship League 2026 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547535_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025989/1791373944150475_VCL_Rajasthan-Spikers-vs-Ayodhya-Garjan_live_landscape_thumb.jpg" group-title="Volleyball",Volleyball Championship League 2026 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547535_HIN
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026051/1791529625526250_APL26_Prithviraj-Yodhas-vs-Chero-Archers_live_landscape_thumb.jpg" group-title="Archery",Archery Premier League 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547537_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025235/1790649388803310_DP_World_Tour_2026_OpendeEspana_presentedby_Madrid_Day3_landscape_thumb.jpg" group-title="Golf",DP World Tour
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547534_ENG
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026094/1791613679228338_UCL_barcelona_arsenal_combo_landscape_thumb.jpg" group-title="Football",Upcoming - UEFA Champions League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547667
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026094/1791613855947338_UCL_Roma_manch_city_combo_landscape_thumb.jpg" group-title="Football",Upcoming - UEFA Champions League 2026-27
@@ -11,6 +23,8 @@ https://mini.allinonereborn.site/events/stream_proxy.php?url=1090546015
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547563
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026021/1791455625098932_UCL26_Galatasaray-vs-Barcelona_promo_landscape_thumb_ddt.jpg" group-title="Football",Upcoming - Galatasaray vs Barcelona - UEFA Champions League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547564
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026115/1791633468675493_Inter_kashi_vs_Kerala_Blasters_dated_landscape_Thum.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547508
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026017/1791450952659369_UCL26_MAN-CITY_vs_PSG_promo_landscape_thumb_ddt.jpg" group-title="Football",Upcoming - Manchester City vs PSG - UEFA Champions League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547561
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026019/1791451533051457_UCL26_ROMA_vs_Real-Madrid_promo_landscape_thumb_ddt.jpg" group-title="Football",Upcoming - Roma vs Real Madrid - UEFA Champions League 2026-27
