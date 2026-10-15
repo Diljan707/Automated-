@@ -1,14 +1,12 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026304/1791965765997842_DP-World-India-Championship---Day-1_landscape_thumb.jpg" group-title="Golf",DP World Tour
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548063_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026388/1792037774484149_Asian_TOur_SJM_Macao_Open_Day1_live_landscape_thumb.jpg" group-title="Golf",Asian Tour 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548210_ENG
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025605/1790913888711779_ag_indvs_nz_promo_dated_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090546015
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026301/1791963024349998_ISL_SCD_vs_Mohun_Bagan_FC_promo_landscape_thumb_dated.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547508
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026346/1791988003592180_UEL_Lyon_vs_Crystal_Palace_tonight_landscape_thumb.jpg" group-title="Football",Upcoming - Matchday 2 - UEFA Europa League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548357
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026301/1791963024349998_ISL_SCD_vs_Mohun_Bagan_FC_promo_landscape_thumb_dated.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547508
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026360/1792003020481677_UEL26_MD2_promo_landscape_thumb.jpg" group-title="Football",Upcoming - Matchday 2 - UEFA Europa League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548356
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000022033/1786433246787561_NZ_vs_IND_DDT_Promo_landscape.jpg" group-title="Cricket",Upcoming - India Tour of New Zealand 
