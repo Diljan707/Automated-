@@ -1,6 +1,10 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026304/1791965765997842_DP-World-India-Championship---Day-1_landscape_thumb.jpg" group-title="Golf",DP World Tour
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548063_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026139/1791667716145390_VCL_Delhi_Dynamites_vs_Tamil_Titans_live_landscape_thumb.jpg" group-title="Volleyball",Volleyball Championship League 2026 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548068_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026139/1791667716145390_VCL_Delhi_Dynamites_vs_Tamil_Titans_live_landscape_thumb.jpg" group-title="Volleyball",Volleyball Championship League 2026 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548068_HIN
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026136/1791664082709476_APL26_Kakatiya_Knights_vs_Chero_Archers_live_landscape_thumb.jpg" group-title="Archery",Archery Premier League 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548076_ENG
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025605/1790913888711779_ag_indvs_nz_promo_dated_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090546015
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026346/1791988003592180_UEL_Lyon_vs_Crystal_Palace_tonight_landscape_thumb.jpg" group-title="Football",Upcoming - Matchday 2 - UEFA Europa League 2026-27
