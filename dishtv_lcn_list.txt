@@ -37,7 +37,7 @@
 151: EPIC Parivaar
 167: Star Utsav
 169: Dangal 2
-171: SONY PAL
+132: SONY PAL
 173: Zoom
 178: DD National HD
 179: DD RAJASTHAN
@@ -743,4 +743,4 @@
 4064: R. Bangla
 4065: Living India News
 4066: Bharat Express
-4070: PTC SIMRAN
+1195: PTC SIMRAN
