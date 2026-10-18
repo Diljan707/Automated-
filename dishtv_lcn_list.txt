@@ -136,8 +136,8 @@
 611: SONY SPORTS TEN 1
 612: SONY SPORTS TEN 2 HD
 613: SONY SPORTS TEN 2
-614: Sony Sports Ten 3 Hindi HD
-615: Sony Sports Ten 3 Hindi
+614: Sony Sports Ten 3  HD
+615: Sony Sports Ten 3 
 620: Star Sports 1 HD Hindi
 621: Star Sports 1 Hindi
 622: SONY SPORTS TEN 5 HD
@@ -300,7 +300,7 @@
 972: TLC HD World
 973: TLC
 974: Nick HD+
-975: Travelxp
+975: Nick
 976: Disney Channel HD
 977: Disney Channel
 979: Super Hungama
