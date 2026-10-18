@@ -1,10 +1,32 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026393/1792046074732742_DP-World_India-Championship_Day4_landscape_thumb.jpg" group-title="Golf",DP World Tour
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548740_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026502/1792157806465755_ISL26_Churchill-Brothers-SC-vs-East-Bengal-FC_live_landscape_thumb.jpg" group-title="Football",MG Indian Super League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549112_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026502/1792157806465755_ISL26_Churchill-Brothers-SC-vs-East-Bengal-FC_live_landscape_thumb.jpg" group-title="Football",MG Indian Super League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549112_HIN
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026502/1792157806465755_ISL26_Churchill-Brothers-SC-vs-East-Bengal-FC_live_landscape_thumb.jpg" group-title="Football",MG Indian Super League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549112_BEN
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026459/1792130666267133_VCL26_Emperia-Marathas-v-Tamil-Titans_live_landscape_thumb.jpg" group-title="Volleyball",Volleyball Championship League 2026 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548741_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026459/1792130666267133_VCL26_Emperia-Marathas-v-Tamil-Titans_live_landscape_thumb.jpg" group-title="Volleyball",Volleyball Championship League 2026 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548741_HIN
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026551/1792220136269169_IND_vs_NZ_1st_T20i_landscape_thumb_dated.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548932
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026521/1792176245531908_ISL26_Churchill_BrothersSC_vs_EastBengalFC_today_promo_landscape_thumb.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026640/1792324419964500_UCL_liverpool_vill_psg_barca_promo_landscape_thumb.jpg" group-title="Football",Upcoming - Matchday 3 - UEFA Champions League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549142
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026634/1792321097703198_matchday_3_landscape_thumbnail.jpg" group-title="Football",Upcoming - Matchday 3 - UEFA Champions League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549143
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026406/1792051867292214_ISL_NorthEast_United_FC_vs_Kerala_Blasters_FC_promo_landscape_thumb_tonight.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547508
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026424/1792064046785585_UCL26_Bayern-vs-Arsenal_promo_DDT_landscape_thumb.jpg" group-title="Football",Upcoming - Bayern München vs Arsenal - UEFA Champions League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549140
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026424/1792064545698585_UCL26_Real-Madrid-vs-Leipzig_DDT_landscape_thumb.jpg" group-title="Football",Upcoming - Real Madrid vs Leipzig - UEFA Champions League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549145
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026424/1792060432660585_UCL26_PSG-vs-Barcelona_promo_DDT_landscape_thumb.jpg" group-title="Football",Upcoming - Paris Saint-Germain vs Barcelona - UEFA Champions League 2026-27 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549144
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026424/1792061592343585_UCL26_Liverpool-vs-Villareal_DDT_landscape_thumb.jpg" group-title="Football",Upcoming - Liverpool vs Villarreal - UEFA Champions League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549141
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026637/1792320926788446_vfb_stuttgart_vs_atletico_madrid_landscape_thumbnail.jpg" group-title="Football",Upcoming - VfB Stuttgart vs Atlético de Madrid - UEFA Champions League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549146
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026551/1792220136269169_IND_vs_NZ_1st_T20i_landscape_thumb_dated.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548747
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026514/1792170340571528_INDvsNZ_5t20i_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
@@ -17,9 +39,3 @@ https://mini.allinonereborn.site/events/stream_proxy.php?url=1090546015
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090538916
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023939/1789325459946480_IND_vs_NZ_landsacpe_thumb.jpg" group-title="Cricket",Upcoming - India Tour of New Zealand 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090542506
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023378/178835785489135_Sunil_grover_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour of New Zealand 
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090541320
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026328/1791978466033872_STCL_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - Salute Tiranga Cricket League (STCL) 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548283
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026604/1792259527608635_ind_vs_nz_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549038
