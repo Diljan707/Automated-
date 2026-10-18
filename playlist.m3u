@@ -1,10 +1,20 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026508/1792166210323579_UFC_FN_Buckley_vs_Malott_landscape_thumb.jpg" group-title="Fight Sports",UFC Fight Night - Buckley vs Malott 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548916_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026508/1792166210323579_UFC_FN_Buckley_vs_Malott_landscape_thumb.jpg" group-title="Fight Sports",UFC Fight Night - Buckley vs Malott 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548916_HIN
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026508/1792166210323579_UFC_FN_Buckley_vs_Malott_landscape_thumb.jpg" group-title="Fight Sports",UFC Fight Night - Buckley vs Malott 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548916_TAM
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026508/1792166210323579_UFC_FN_Buckley_vs_Malott_landscape_thumb.jpg" group-title="Fight Sports",UFC Fight Night - Buckley vs Malott 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548916_TEL
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026508/1792166210323579_UFC_FN_Buckley_vs_Malott_landscape_thumb.jpg" group-title="Fight Sports",UFC Fight Night - Buckley vs Malott 
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548916_KAN
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026551/1792220136269169_IND_vs_NZ_1st_T20i_landscape_thumb_dated.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548747
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548932
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026521/1792176245531908_ISL26_Churchill_BrothersSC_vs_EastBengalFC_today_promo_landscape_thumb.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547508
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026528/1792218247221303_NZ_vs_IND_1stT20i_Promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548932
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026551/1792220136269169_IND_vs_NZ_1st_T20i_landscape_thumb_dated.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548747
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026514/1792170340571528_INDvsNZ_5t20i_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548865
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026512/1792168426244866_NZvsIND_1st_t20i_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
@@ -19,3 +29,5 @@ https://mini.allinonereborn.site/events/stream_proxy.php?url=1090542506
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090541320
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026328/1791978466033872_STCL_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - Salute Tiranga Cricket League (STCL) 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548283
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026604/1792259527608635_ind_vs_nz_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549038
