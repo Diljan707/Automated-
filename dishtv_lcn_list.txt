@@ -300,7 +300,7 @@
 972: TLC HD World
 973: TLC
 974: Nick HD+
-975: Nick
+975: Travelxp
 976: Disney Channel HD
 977: Disney Channel
 979: Super Hungama
@@ -355,6 +355,7 @@
 1191: PTC News
 1193: News18 Punjab Haryana Himachal
 1194: India News Haryana
+1195: PTC SIMRAN
 1196: News State Punjab Haryana Himachal
 1197: Khabrain Abhi Tak
 1200: Pratham News
@@ -435,7 +436,7 @@
 1428: CTVN-AKD-PLUS
 1429: DD BANGLA
 1430: Jalsha Movies HD
-1195: PTC SIMRAN
+1431: PTC SIMRAN
 1433: Zee Bangla Sonar
 1439: Colors Bangla Cinema
 1454: Zee Marathi HD
@@ -735,14 +736,13 @@
 3233: Goodness TV 
 3235: Powervision
 3237: Harvest TV
+4001: K News India
 4002: Skyama Daily Post News
 4004: NORTH EAST LIVE
 4005: Star Utsav Movies
 4006: India Daily Live
-4015: K News India
-4026: Manoranjan Movies
+4017: Manoranjan Movies
 4043: Republic TV
 4064: R. Bangla
 4065: Living India News
 4066: Bharat Express
-4070: PTC SIMRAN
