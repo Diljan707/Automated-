@@ -1,10 +1,14 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026477/1792131894013184_UECL_26_MD2_Jablonec-vs-Brighton_live_landscape_thumb.jpg" group-title="Football",UEFA Conference League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549627_ENG
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026937/179261767506469_STCL26_mumbai_vs_tamilnadu_landscape_thumb.jpg" group-title="Cricket",Salute Tiranga Cricket League (STCL) 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549594_HIN
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000027002/1792654736205446_ISL_Inter-Kashi_vs_East-Bengal-FC_promo_DDT_landscape_thumb.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025900/1791244113649235_UEL2627_MD3_Bournemouth_vs_Milan_landscape_thumb.jpg" group-title="Football",UEFA Europa League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549712_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025900/1791245711395235_UEL2627_MD3_Besiktas_vs_Crystal_Palace_landscape_thumb.jpg" group-title="Football",UEFA Europa League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549735_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026498/1792147436477574_UECL_26_MD2_Ajax-vs-Atalanta_live_landscape_thumb.jpg" group-title="Football",UEFA Conference League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549910_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000027002/1792654763782446_ISL_Inter-Kashi_vs_East-Bengal-FC_promo_Today_landscape_thumb.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547508
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000027058/1792690224910846_indvsnz_2nd_t20i_dated_landscape_thumb.jpg" group-title="Cricket",Upcoming - 2nd T20I - India Tour Of New Zealand 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090550079
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026951/179264549504218_NZ_vs_IND_promo_thumb_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549928
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026802/1792507041786654_NZvsIND_t20i_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - India Tour Of New Zealand 2026
@@ -15,3 +19,9 @@ https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548747
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090549038
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026328/1791978466033872_STCL_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - Salute Tiranga Cricket League (STCL) 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090548283
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000027049/1792686516383928_NZvsIND26_vaibhav_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - 2nd T20I - India Tour Of New Zealand 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090550084
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000027049/1792686594133928_NZvsIND26_blockbuster_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - 2nd T20I - India Tour Of New Zealand 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090550083
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000027049/1792686364520928_NZvsIND26_varma_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - 2nd T20I - India Tour Of New Zealand 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090550080
