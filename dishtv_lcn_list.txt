@@ -736,13 +736,13 @@
 3233: Goodness TV 
 3235: Powervision
 3237: Harvest TV
-4001: K News India
 4002: Skyama Daily Post News
 4004: NORTH EAST LIVE
 4005: Star Utsav Movies
 4006: India Daily Live
-4017: Manoranjan Movies
+4027: K News India
 4043: Republic TV
 4064: R. Bangla
 4065: Living India News
 4066: Bharat Express
+4085: Manoranjan Movies
