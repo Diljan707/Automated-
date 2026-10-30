@@ -300,7 +300,7 @@
 972: TLC HD World
 973: TLC
 974: Nick HD+
-975: Travelxp
+975: Nick
 976: Disney Channel HD
 977: Disney Channel
 979: Super Hungama
