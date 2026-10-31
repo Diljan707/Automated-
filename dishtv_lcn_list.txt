@@ -1,4 +1,5 @@
-0: Watcho
+0: India News
+99: Watcho
 100: Star Plus HD
 101: Star Plus
 102: Zee TV HD
@@ -300,7 +301,7 @@
 972: TLC HD World
 973: TLC
 974: Nick HD+
-975: Nick
+975: Travelxp
 976: Disney Channel HD
 977: Disney Channel
 979: Super Hungama
@@ -397,7 +398,7 @@
 1293: ABP Asmita
 1296: Sandesh News
 1297: CNBC Bajar
-1298: VTV Gujarati
+1298: VTV News
 1299: TV9 Gujarati
 1302: Zee Sarthak
 1307: Tarang
@@ -496,7 +497,7 @@
 1645: Sandesh News
 1647: ABP Asmita
 1649: Zee 24 Kalak
-1651: VTV Gujarati
+1651: VTV News
 1707: Tarang
 1711: Zee Sarthak
 1713: Star Kiran
