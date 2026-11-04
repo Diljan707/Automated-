@@ -1,11 +1,11 @@
-0: India News
+
 99: Watcho
 100: Star Plus HD
 101: Star Plus
 102: Zee TV HD
 103: Zee tv
-104: SONY ENTERTAINMENT TELEVISION HD
-105: SONY ENTERTAINMENT TELEVISION
+104: SET HD
+105: SET
 106: SONY SAB HD
 107: SONY SAB
 108: &TV HD
@@ -52,7 +52,9 @@
 237: DD MP
 245: DD RAJASTHAN
 304: &pictures HD
+304: Andpictures HD
 305: &Pictures
+305: Andpictures
 307: Zee Bollywood
 310: SONY MAX HD
 311: SONY MAX
@@ -302,7 +304,7 @@
 972: TLC HD World
 973: TLC
 974: Nick HD+
-975: Travelxp
+975: Nick
 976: Disney Channel HD
 977: Disney Channel
 979: Super Hungama
@@ -345,7 +347,7 @@
 1152: Chardikla Time TV
 1154: PTC Punjabi
 1156: ZEE PUNJABI
-1181: Pitaara TV
+1181: Pitaara 
 1182: Tabbar Hits
 1183: PTC Chakde
 1184: PTC Punjabi Gold
@@ -353,6 +355,7 @@
 1186: PTC MUSIC
 1187: MH1
 1188: Balle Balle
+1188: Balle Balle TV
 1190: Zee Punjab Haryana Himachal
 1191: PTC News
 1193: News18 Punjab Haryana Himachal
