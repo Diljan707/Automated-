@@ -1,5 +1,5 @@
 0: India News
-99: Watcho
+99: Vzy
 100: Star Plus HD
 101: Star Plus
 102: Zee TV HD
