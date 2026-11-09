@@ -1,0 +1,2 @@
+#EXTINF:-1 tvg-id="117" tvg-name="Nick SD" group-title="Kids",Nick SD
+https://bpaicatchupta4.akamaized.net/bpk-tv/irdeto_com_Channel_117/output/dash/index.mpd?hdntl=exp=1794295680~acl=/bpk-tv/irdeto_com_Channel_117/output/*~id=8872042348~data=hdntl~hmac=5cbf6a00b13bda485459403b0208cc642022391427e094fc8cfc29a5f01c13cc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36&X-Forwarded-For=59.178.74.184&Origin=https://watch.tataplay.com&Referer=https://watch.tataplay.com/
