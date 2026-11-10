@@ -92,6 +92,7 @@
 411: B4U Kadak
 416: Sony Max 1
 420: Big Magic
+422: Sony Wah
 451: Zing
 454: MTV HD
 455: MTV
@@ -220,7 +221,6 @@
 749: Times Now Navbharat
 751: Sudarshan TV
 752: Zee Delhi NCR Haryana
-753: Bharat Express
 754: DD India HD
 755: Sansad TV 1 HD
 757: Sansad TV 2 HD
@@ -575,7 +575,6 @@
 2403: Maa Movies
 2404: Zee Cinemalu HD
 2405: Zee Cinemalu
-2414: Sony Wah
 2417: Sun Gemini Music
 2419: Maa Music
 2421: Raj Musix Telugu
@@ -742,7 +741,6 @@
 4004: NORTH EAST LIVE
 4005: Star Utsav Movies
 4006: India Daily Live
-4009: K News India
 4029: Manoranjan Movies
 4043: Republic TV
 4064: R. Bangla
