@@ -1,10 +1,20 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028886/1794510102701368_ACC_U19_FINAL_PAK_vs_IND_Promo_landscape_thumb_today.jpg" group-title="Cricket",Upcoming - Pakistan vs India - Final - ACC Men's U19 Asia Cup 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090554060
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028883/1794508714132577_ACC_U19_FINAL_PAK_vs_IND_live_landscape_thumb.jpg" group-title="Cricket",ACC Men's U19 Asia Cup 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090553929_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028883/1794508714132577_ACC_U19_FINAL_PAK_vs_IND_live_landscape_thumb.jpg" group-title="Cricket",ACC Men's U19 Asia Cup 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090553929_HIN
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028883/1794508714132577_ACC_U19_FINAL_PAK_vs_IND_live_landscape_thumb.jpg" group-title="Cricket",ACC Men's U19 Asia Cup 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090553929_TAM
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028883/1794508714132577_ACC_U19_FINAL_PAK_vs_IND_live_landscape_thumb.jpg" group-title="Cricket",ACC Men's U19 Asia Cup 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090553929_TEL
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028883/1794508714132577_ACC_U19_FINAL_PAK_vs_IND_live_landscape_thumb.jpg" group-title="Cricket",ACC Men's U19 Asia Cup 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090553929_KAN
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028796/1794398873589427_DP_World_Tour_Championship_Dubai_day3_landscape_thumb.jpg" group-title="Golf",DP World Tour
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090553932_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028983/1794593108406911_UNL_Portugal_vs_Denmark_Promo_landscape_thumb_tonight.jpg" group-title="Football",Upcoming - Matchday 5 - UEFA Nations League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090553650
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028671/1794223107190234_Asia_Cup_Rising_Star_Promo_DTT_landscape_thumb.jpg" group-title="Cricket",Upcoming - DP World Asia Cup Rising Stars Men's 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090552650
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028983/1794592051508911_UNL_Portugal_vs_Denmark_Promo_landscape_thumb_dated.jpg" group-title="Football",Upcoming - Matchday 5 - UEFA Nations League 2026-27
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090553650
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028973/1794577038912434_UFC-334_DDT_landscape_thumb.jpg" group-title="Fight Sports",Upcoming - UFC 334 - Gane vs Hokit
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090553633
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028505/1794004461534683_ACC_Rising_Stars_Promo_Dated_landscape_thumb.jpg" group-title="Cricket",Upcoming - India vs Pakistan - DP World Asia Cup Rising Stars Men's 2026
