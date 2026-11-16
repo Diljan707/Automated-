@@ -1,12 +1,20 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000027787/1793259677394700_UNL26_MD6_Iceland_vs_Luxembourg_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090554490_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000027761/179326116564755_UNL26_MD6_Estonia_vs_Bulgaria_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090554494_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000027835/1793267180605986_UNL26_MD6_Lithuania_vs_Liechtenstein_landscape_thumb.jpg" group-title="Football",UEFA Nations League 2026-27
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090554495_ENG
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000029081/1794699615115191_INT_Friendlies26_Andorra_vs_Azerbaijan_live_landscape_thumb.jpg" group-title="Football",UEFA International Friendlies
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090554514_ENG
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000029154/179474272187082_UNL26_germany_vs_netherlands_tonight_landscape_thumb.jpg" group-title="Football",Upcoming - Matchday 6 - UEFA Nations League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090554424
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000029217/1794841912496711_NZvsIND_1st_test_day1_dated_landscape_thumb.jpg" group-title="Cricket",Upcoming - 1st Test - India Tour Of New Zealand 2026
+https://mini.allinonereborn.site/events/stream_proxy.php?url=1090554106
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028671/1794223107190234_Asia_Cup_Rising_Star_Promo_DTT_landscape_thumb.jpg" group-title="Cricket",Upcoming - DP World Asia Cup Rising Stars Men's 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090552650
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000029172/1794766062920497_ACC_Rising_Stars_India_vs_Pakistan_landscape_thumb_dated.jpg" group-title="Cricket",Upcoming - India A vs Pakistan Shaheens - DP World Asia Cup Rising Stars Men's 2026
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090552952
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028925/1794557644318754_NZvsIND_1st_test_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - 1st Test - India Tour Of New Zealand 2026
-https://mini.allinonereborn.site/events/stream_proxy.php?url=1090554106
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026531/1792220168107930_Indian_Super_League_Football_Landscape_Thumb_Dated.jpg" group-title="Football",Upcoming - MG Indian Super League 2026-27
 https://mini.allinonereborn.site/events/stream_proxy.php?url=1090547508
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000028373/1793864472359710_india_cricket_promo_landscape_thumb.jpg" group-title="Cricket",Upcoming - Cricket Non-Stop Combo
