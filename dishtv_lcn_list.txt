@@ -480,6 +480,7 @@
 1533: News18 Assam North East
 1535: News Live
 1537: Nepal One
+1539: NORTH EAST LIVE
 1554: Bhojpuri Cinema
 1555: ZEE BIOSKOPE
 1556: EPIC bhojpuri
@@ -738,7 +739,6 @@
 3235: Powervision
 3237: Harvest TV
 4002: Skyama Daily Post News
-4004: NORTH EAST LIVE
 4005: Star Utsav Movies
 4006: India Daily Live
 4014: Manoranjan Movies
